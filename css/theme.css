@@ -79,8 +79,10 @@ body {
     line-height: 1.4;
     color: #666666;
 }
-
-
+@font-face {
+    font-family: headFont;
+    src: url(../fonts/Bord.ttf);
+ }
 
 @media (min-width: 992px) {
     body {
@@ -107,6 +109,7 @@ body .wrapper {
     body .wrapper {
         overflow: hidden;
     }
+   
 }
 
 b,
@@ -716,6 +719,7 @@ header .text p:last-child {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+  
 }
 
 @media (min-width: 992px) {
@@ -846,8 +850,10 @@ nav .logo {
   height: 55px;
 }
 #heddt{
+   /* margin-top: 5px;*/
+   margin-top: -10px;
     color: #000;
-    font-size:26px
+    font-size:36px
 }
 nav .logo img {
     margin-top: -20px;
@@ -1649,6 +1655,7 @@ nav .login-wrapper a {
         max-width: 300px;
     }
    
+   
 }
 
 nav .cart-wrapper {
@@ -1932,6 +1939,7 @@ nav .cart-wrapper.open {
     .header-content .item .block .image img {
         display: none;
     }
+   
 }
 
 @media (min-width: 1200px) {
@@ -2037,6 +2045,11 @@ nav .cart-wrapper.open {
     .blocks.blocks-boxed .text {
         padding: 20px 0 0 0;
     }
+    /*#heddt{
+        margin-left: 10px;
+        margin-top: -5px;
+        font-size: 16px;
+    }*/
 }
 
 /*  
@@ -4562,12 +4575,13 @@ nav .cart-wrapper.open {
     position: relative;
     background-position: center;
     background-size: cover;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
     background-color: #3a3d45;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 .banner .btn {
@@ -6258,7 +6272,7 @@ footer {
     background-repeat: no-repeat;
     position: relative;
     color: #666666;
-    background-color: #071630;
+    background-color: #fff;
     padding: 15px !important;
     font-size: 85%;
 }
@@ -6278,7 +6292,7 @@ footer {
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 footer .h1, footer .h2, footer .h3, footer .h4, footer .h5, footer .h6 {
     /*color: #245a92;*/
-    color: #fff;
+    color: #000;
 }
 
 footer .form-control {
@@ -6299,7 +6313,7 @@ footer ul li {
 }
 
 footer a {
-    color: #fff;
+    color: #666666;
 }
 
 footer a:hover {
