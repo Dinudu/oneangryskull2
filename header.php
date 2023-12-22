@@ -90,7 +90,35 @@
 			background-color: #f6f7f8 !important;
 			color: #000;
 		}
+		
 
+		/*@keyframes burn {
+      0% { opacity: 1; }
+      25% { opacity: 0.8; transform: scale(1.2); }
+      50% { opacity: 0.6; transform: scale(1.4); }
+      75% { opacity: 0.4; transform: scale(1.6); }
+      100% { opacity: 0; transform: scale(1.8); }
+    }*/
+	@keyframes burn {
+		0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; }
+      25% { text-shadow: 0 0 10px #ff3300, 0 0 15px #ff6600, 0 0 20px #ff9900; }
+      50% { text-shadow: 0 0 15px #ff3300, 0 0 20px #ff6600, 0 0 25px #ff9900; }
+      75% { text-shadow: 0 0 20px #ff3300, 0 0 25px #ff6600, 0 0 30px #ff9900; }
+      100% { text-shadow: 0 0 25px #ff3300, 0 0 30px #ff6600, 0 0 35px #ff9900; }
+    }
+	.burn-text {
+		color: #61dafb;
+      font-weight: bold;
+      animation: burn 3s ease-in-out infinite;
+    }
+		@media (max-width: 767px){
+			#heddt{
+        margin-left: 10px;
+        margin-top: -5px;
+        font-size: 16px;
+    }
+          
+            }
 		
 	</style>
 	<?php wp_head(); ?>
@@ -109,7 +137,8 @@
 	<a href="<?php bloginfo('url'); ?>" class="logo" id="headlg">
 	
 	
-		<span  id="heddt" style="font-family: 'Lora', serif;">One Angry Skull</span>
+		<span  id="heddt" style="font-family: headFont;" class="burn-text">One Angry Skull</span>
+
 	</a>
 
 	<!-- ==========  Pre navigation ========== -->
@@ -120,13 +149,13 @@
 				<a href="#" > </a>
 			</div>
 			<div class="col-md-3">
-				<a href="#" id="fb_head" ><i class="fa-solid fa-comment" ></i> Feedback </a>
+				<a href="#" id="fb_head" ><i class="fa-solid fa-comment" ></i>&nbsp;&nbsp; Feedback </a>
 			</div>
 			<div class="col-md-3">
-				<a href="#" id="fq_head"><i class="fa-solid fa-circle-info" ></i> FAQ</a>
+				<a href="#" id="fq_head"><i class="fa-solid fa-circle-info" ></i>&nbsp;&nbsp; FAQ</a>
 			</div>
 			<div class="col-md-3">
-				<a href="#" id="hp_head"><i class="fa-solid fa-circle-question" id="qqqsst"></i> Help Center </a>
+				<a href="#" id="hp_head"><i class="fa-solid fa-circle-question" id="qqqsst"></i>&nbsp;&nbsp; Help Center </a>
 			</div>
 		</div>
 	</div>
@@ -139,20 +168,17 @@
 			<li class="left-side" style="background-color: #000;" >
 			<a href="<?php bloginfo('url'); ?>/" class="logo-icon" >
 			<img src=<?php echo get_theme_file_uri( 'img/ona.JPG' );  ?>  id="lglg" alt="Alternate Text" /></a></li>
+		<!--	
+			
 			<li class="left-side" ><a href="<?php bloginfo('url'); ?>/product-grid/">Men </a></li>
-			<!--
-				
-				// Use active class for current state
-
-				<li class="left-side active"><a href="#">Man</a></li>
-
-			-->
+			
 			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">Woman</a></li>
 			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">ACCESSORIES</a></li>
 			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">SPORTWEAR</a></li>
 			<li><a href="javascript:void(0);" class="open-login"><i class="icon icon-user"></i></a></li>
 			<li class="r-side"><a href="javascript:void(0);" class="open-search"><i class="icon icon-magnifier"></i></a></li>
 			<li class="r-side"><a href="javascript:void(0);" class="open-cart" ><i class="icon icon-cart" ></i> <span>4</span></a></li>
+	-->
 		</ul>
 	</div>
 

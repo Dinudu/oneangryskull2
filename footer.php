@@ -32,14 +32,10 @@
             <!--footer links-->
             <div class="footer-links">
                 <div class="row">
-                    <div class="col-sm-4 col-md-3">
-                        <h5>Browse by</h5>
-                        <ul>
-                            <li><a href="<?php bloginfo('url'); ?>/men/">Men</a></li>
-                            <li><a href="<?php bloginfo('url'); ?>/women/">Woman</a></li>
-                            <li><a href="<?php bloginfo('url'); ?>/accessories/">Accessories</a></li>
-                            <li><a href="<?php bloginfo('url'); ?>/sportwear/">Sportwear</a></li>
-                        </ul>
+                    <div class="col-sm-4 col-md-4">
+                        <!--<h3><span   style="font-family: headFont;">One Angry Skull</span>-->
+		</h3>
+                    <img src=<?php echo get_theme_file_uri( 'img/ona3.png' );  ?>  id="lglg" alt="Alternate Text" style="width:200px;height:200px" /></a>
                     </div>
                     <!--<div class="col-sm-4 col-md-2">
                         <h5>Quick links</h5>
@@ -52,27 +48,34 @@
                             <li><a href="#">FAQ</a></li>
                         </ul>
                     </div>-->
-                    <div class="col-sm-4 col-md-3">
-                        <h5>Order info</h5>
+                    <div class="col-sm-4 col-md-2">
+                    <h5>Browse by</h5>
                         <ul>
-                            <li><a href="<?php bloginfo('url'); ?>/shipping/">Shipping</a></li>
-                            <li><a href="<?php bloginfo('url'); ?>/index.php/terms-and-conditions/">Terms and Conditions</a></li>
-                            <!--<li><a href="#">Exchanges</a></li>
-                            <li><a href="#">Order history</a></li>-->
+                            <li><a href="<?php bloginfo('url'); ?>/men/">Men</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/women/">Woman</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/accessories/">Accessories</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/sportwear/">Sportwear</a></li>
+                        
+                            
+                           
                         </ul>
                     </div>
-                    <div class="col-sm-4 col-md-3">
-                        <h5>Customer service</h5>
+                    <div class="col-sm-4 col-md-2">
+                        <h5>Customer Service</h5>
                         <ul>
-                            <!--<li><a href="#">Product Recalls</a></li>-->
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/shipping/">Shipping</a></li>
                             <li><a href="<?php bloginfo('url'); ?>/index.php/faq/">FAQ</a></li>
                             <!--<li><a href="#">Store Pickup</a></li>-->
                             <li><a href="<?php bloginfo('url'); ?>/index.php/contact-us/">Contact us</a></li>
+                            <li></li>
+                          
                         </ul>
                     </div>
-                    <div class="col-sm-12 col-md-3">
-                        <h5>Sign up for our newsletter</h5>
-                        <p><i style="color: #fff;">Add your email address to sign up for our monthly emails and to receive promotional offers.</i></p>
+                    <div class="col-sm-12 col-md-4">
+                        <h5>Sign Up For Our Newsletter</h5>
+                        <p><i style="color: #666666;">Add your email address to sign up for our monthly emails and to receive promotional offers.</i></p>
                         <div class="form-group form-newsletter">
                             <input class="form-control" type="text" name="email" value="" style="color: #fff;" placeholder="Email address" />
                             <input type="submit" class="btn btn-main btn-sm" value="Subscribe" />
@@ -86,15 +89,15 @@
             <div class="footer-social">
                 <div class="row">
                     <div class="col-sm-6">
-                        <a href="<?php bloginfo('url'); ?>/sitemap/">Sitemap</a> &nbsp; | &nbsp; <a href="<?php bloginfo('url'); ?>/index.php/privacy-policy/">Privacy policy</a>
+                        <a href="<?php bloginfo('url'); ?>/sitemap/">Sitemap</a> &nbsp; | &nbsp; <a href="<?php bloginfo('url'); ?>/index.php/privacy-policy/">Privacy policy</a> | &nbsp; <a href="<?php bloginfo('url'); ?>/index.php/terms-and-conditions/">Terms and Conditions</a>
                     </div>
                     <div class="col-sm-6 links">
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-x-twitter" style="color: #fff;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook" style="color: #666666;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-x-twitter" style="color: #666666;"></i></a></li>
                             <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-                            <li><a href="#"><i class="fa-brands fa-youtube" style="color: #fff;"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram" style="color: #fff;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube" style="color: #666666;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram" style="color: #666666;"></i></a></li>
                         </ul>
                     </div>
                 </div>

@@ -475,7 +475,7 @@ get_header();
 
     <!-- === blog item === -->
 
-    <div class="col-sm-4" style=" border: 15px solid #A9A9A9;">
+    <div class="col-sm-4" style=" border: 15px solid #171717;">
         <article>
             <div>
                 <div class="image">
@@ -496,7 +496,7 @@ get_header();
 
     <!-- === blog item === -->
 
-    <div class="col-sm-4" style=" border: 15px solid #A9A9A9;">
+    <div class="col-sm-4" style=" border: 15px solid #171717;">
         <article>
             <div>
                 <div class="image">
@@ -517,7 +517,7 @@ get_header();
 
     <!-- === blog item === -->
 
-    <div class="col-sm-4" style=" border: 15px solid #A9A9A9;">
+    <div class="col-sm-4" style=" border: 15px solid #171717;">
         <article>
             <div>
                 <div class="image">
