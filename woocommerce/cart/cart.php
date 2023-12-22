@@ -198,7 +198,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							?>
                             </div>
                             <!--delete-this-item-->
-                            <span class="icon icon-cross icon-delete"><?php esc_html_e('woocommerce' ); ?></span>
+                            <span class="icon icon-cross icon-delete"><?php esc_html_e(); ?></span>
                         </div>
 
                      
