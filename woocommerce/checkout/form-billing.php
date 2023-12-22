@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <div class="container">
 	<div class="col-md-6">
-		<div class="woocommerce-billing-fields">
+		<div class="login-block login-block-signup">
 			<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
 				<h3><?php esc_html_e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
