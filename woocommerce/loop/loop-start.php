@@ -20,5 +20,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <div class="col-md-9 col-xs-12">
-<article>
+
             
