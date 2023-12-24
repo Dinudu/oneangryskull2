@@ -209,7 +209,7 @@ if ( ! function_exists( 'oneangryskull_woocommerce_header_cart' ) ) {
 		}
 		?>
 		<ul id="site-header-cart" class="site-header-cart">
-			<li class="<?php echo esc_attr( $class ); ?>">
+			<div class="">
 				<?php oneangryskull_woocommerce_cart_link(); ?>
 			</li>
 			<li>
