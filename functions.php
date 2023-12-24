@@ -142,7 +142,7 @@ function display_home_products(){
             echo '<a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>';
             echo '</span>';
             echo '<span>';
-            echo '<a href="#productid1" class="mfp-open" data-title="Quick wiew"><i class="icon icon-eye"></i></a>';
+            echo '<a href="#' . get_permalink() . '" class="mfp-open" data-title="Quick wiew"><i class="icon icon-eye"></i></a>';
             echo '</span>';
             echo '</div>';
              echo '<div class="btn btn-add">';
@@ -151,7 +151,7 @@ function display_home_products(){
             echo '<div class="figure-grid">'
             ;
             echo '<div class="image">';
-            echo '<a  href="' . get_permalink() . '"> <img src="' . $image_url . '" alt="' . get_the_title() . '" width="360">';
+            echo '<a class="mfp-open"  href="' . get_permalink() . '"> <img src="' . $image_url . '" alt="' . get_the_title() . '" width="360">';
              echo '</a>';
             echo '</div>';
             echo '<div class="text">';
