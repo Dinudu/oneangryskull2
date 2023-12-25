@@ -101,13 +101,12 @@
     }*/
 	@keyframes burn {
 		0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; }
-      25% { text-shadow: 0 0 10px #ff3300, 0 0 15px #ff6600, 0 0 20px #ff9900; }
-      50% { text-shadow: 0 0 15px #ff3300, 0 0 20px #ff6600, 0 0 25px #ff9900; }
-      75% { text-shadow: 0 0 20px #ff3300, 0 0 25px #ff6600, 0 0 30px #ff9900; }
-      100% { text-shadow: 0 0 25px #ff3300, 0 0 30px #ff6600, 0 0 35px #ff9900; }
+      25% { text-shadow: 0 0 10px #AC0507, 0 0 15px #AC0507, 0 0 20px #AC0507; }
+      50% { text-shadow: 0 0 15px #AC0507, 0 0 20px #AC0507, 0 0 25px #AC0507; }
+      75% { text-shadow: 0 0 20px #AC0507, 0 0 25px #AC0507, 0 0 30px #AC0507; }
+      100% { text-shadow: 0 0 25px #AC0507, 0 0 30px #AC0507, 0 0 35px #AC0507; }
     }
 	.burn-text {
-		color: #61dafb;
       font-weight: bold;
       animation: burn 3s ease-in-out infinite;
     }
