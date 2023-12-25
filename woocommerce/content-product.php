@@ -24,7 +24,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div class="col-xs-6 col-sm-4 col-lg-3">
+<div class="col-xs-6 col-sm-4 col-lg-5">
 <article>
 	<?php
 	/**
