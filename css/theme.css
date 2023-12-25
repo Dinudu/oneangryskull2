@@ -438,9 +438,9 @@ select {
     transform: translate(-50%, -50%);
 }
 
-.bottom
-{
-	margin-top: 20px;
+.bottom {
+    margin-top: 110px;
+    margin-bottom: 30px;
 }
 
 .btn.btn-buy {
