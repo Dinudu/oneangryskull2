@@ -438,6 +438,11 @@ select {
     transform: translate(-50%, -50%);
 }
 
+.bottom
+{
+	margin-top: 20px;
+}
+
 .btn.btn-buy {
     background-color: #000;
     color: white;

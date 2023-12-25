@@ -24,12 +24,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<style>
-	.bottom
-	{
-		margin-top:4px;
-	}
-</style>
 <div class="col-xs-6 col-sm-4 col-lg-4">
 <article class="bottom">
 	<?php
