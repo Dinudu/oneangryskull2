@@ -26,6 +26,9 @@ function oneangryskull_setup() {
 		* If you're building a theme based on OneAngrySkull, use a find and replace
 		* to change 'oneangryskull' to the name of your theme in all the template files.
 		*/
+
+
+
 	load_theme_textdomain( 'oneangryskull', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
@@ -99,6 +102,8 @@ function oneangryskull_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	
 }
 add_action( 'after_setup_theme', 'oneangryskull_setup' );
 
@@ -119,7 +124,8 @@ add_action( 'after_setup_theme', 'oneangryskull_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
- 
+
+
  
 function display_home_products(){
     $args = array(
