@@ -24,8 +24,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
+<style>
+	.bottom
+	{
+		margin-top:4px;
+	}
+</style>
 <div class="col-xs-6 col-sm-4 col-lg-4">
-<article>
+<article class="bottom">
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item.
