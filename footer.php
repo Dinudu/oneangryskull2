@@ -93,11 +93,8 @@
                     </div>
                     <div class="col-sm-6 links">
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook" style="color: #666666;"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-x-twitter" style="color: #666666;"></i></a></li>
-                            <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-                            <li><a href="#"><i class="fa-brands fa-youtube" style="color: #666666;"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram" style="color: #666666;"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100091380727029"><i class="fa-brands fa-facebook" style="color: #666666;"></i></a></li>
+                            <li><a href="https://www.instagram.com/oneangryskull/"><i class="fa-brands fa-instagram" style="color: #666666;"></i></a></li>
                         </ul>
                     </div>
                 </div>
