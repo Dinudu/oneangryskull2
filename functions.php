@@ -150,7 +150,7 @@ function display_home_products(){
             echo '</div>';
             echo '<div class="figure-grid">'
             ;
-            echo '<div class="image">';
+            echo '<div class="">';
             echo '<a  href="#' . $image_id . '" " class="mfp-open"> <img src="' . $image_url . '" alt="' . get_the_title() . '" width="360">';
              echo '</a>';
             echo '</div>';
@@ -244,7 +244,7 @@ function display_home_products(){
             <div class="popup-cell">
                 <div class="popup-buttons">
                     <a href="' . get_permalink() . '"><span class="icon icon-eye"></span> <span class="hidden-xs">View more</span></a>
-                    <a href="javascript:void(0);"><span class="icon icon-cart"></span> <span class="hidden-xs">Buy</span></a>
+                    <a href="' . get_permalink() . '"><span class="icon icon-cart"></span> <span class="hidden-xs">Buy</span></a>
                 </div>
             </div>
         </div>
