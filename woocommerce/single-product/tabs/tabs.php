@@ -30,7 +30,7 @@ $product_tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $product_tabs ) ) : ?>
 
-	<div class="col-md-9">
+	<div class="col-md-12">
 		<ul class="nav nav-tabs" role="tablist">
 			<?php foreach ( $product_tabs as $key => $product_tab ) : ?>
 				<li role="presentation" class="<?php echo esc_attr( $key ); ?>_tab" id="tab-title-<?php echo esc_attr( $key ); ?>" role="tab" aria-controls="tab-<?php echo esc_attr( $key ); ?>">
