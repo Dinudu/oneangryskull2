@@ -62,73 +62,75 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 
 
-<div class="product">
-<div class="popup-title">
-           <div class="h1 title">
-              <small>product category</small>
-            </div>
-        </div>
+	<div class="product">
+		<div class="popup-title">
+				<div class="h1 title">
+					<small>product category</small>
+					</div>
+				</div>
 
 
-        <div class="owl-product-gallery">
-            <img src="' . $image_url . '" alt="" width="640" />
-        </div>
+				<div class="owl-product-gallery">
+					<img src="' . $image_url . '" alt="" width="640" />
+				</div>
 
 
-        <div class="popup-content">
-           <div class="product-info-wrapper">
-                <div class="row">
+				<div class="popup-content">
+				<div class="product-info-wrapper">
+						<div class="row">
 
 
-                <div class="col-sm-6">
-                <div class="info-box">
-                <strong>Maifacturer</strong>
-                <span>Brand name</span>
-                </div>
-                <div class="info-box">
-            	<strong>Materials</strong>
-                <span>Wood, Leather, Acrylic</span>
-                </div>
-                <div class="info-box">
-                    <strong>Availability</strong>
-                        <span><i class="fa fa-check-square-o"></i> in stock</span>
-                    </div>
-                </div>
+						<div class="col-sm-6">
+						<div class="info-box">
+						<strong>Maifacturer</strong>
+						<span>Brand name</span>
+						</div>
+						<div class="info-box">
+						<strong>Materials</strong>
+						<span>Wood, Leather, Acrylic</span>
+						</div>
+						<div class="info-box">
+							<strong>Availability</strong>
+								<span><i class="fa fa-check-square-o"></i> in stock</span>
+							</div>
+						</div>
 
 
-                <div class="col-sm-6">
-                <div class="info-box">
-                	<strong>Available Colors</strong>
-                        <div class="product-colors clearfix">
-                            <span class="color-btn color-btn-red"></span>
-                            
-                        </div>
-                        </div>
-                        <div class="info-box">
-                            <strong>Choose size</strong>
-                            <div class="product-colors clearfix">
-                                
-                            </div>
-                        </div>
-                    </div>
+						<div class="col-sm-6">
+						<div class="info-box">
+							<strong>Available Colors</strong>
+								<div class="product-colors clearfix">
+									<span class="color-btn color-btn-red"></span>
+									
+								</div>
+								</div>
+								<div class="info-box">
+									<strong>Choose size</strong>
+									<div class="product-colors clearfix">
+										
+									</div>
+								</div>
+							</div>
 
-                </div>
-            </div> 
-        </div> 
+						</div>
+					</div> 
+				</div> 
 
 
-    <div class="popup-table">
-            <div class="popup-cell">
-                <div class="price">
-                    <span class="h3"></span>
-                </div>
-            </div>
-            <div class="popup-cell">
-                <div class="popup-buttons">
-                    <a href="<?php  the_permalink(); ?>"><span class="icon icon-eye"></span> <span class="hidden-xs">View more</span></a>
-                    <a href="<?php  the_permalink(); ?>"><span class="icon icon-cart"></span> <span class="hidden-xs">Buy</span></a>
-                </div>
-            </div>
-        </div>
+			<div class="popup-table">
+					<div class="popup-cell">
+						<div class="price">
+							<span class="h3"></span>
+						</div>
+					</div>
+					<div class="popup-cell">
+						<div class="popup-buttons">
+							<a href="<?php  the_permalink(); ?>"><span class="icon icon-eye"></span> <span class="hidden-xs">View more</span></a>
+							<a href="<?php  the_permalink(); ?>"><span class="icon icon-cart"></span> <span class="hidden-xs">Buy</span></a>
+						</div>
+					</div>
+				</div>
 
+		</div>
+	</div>
 </div>
