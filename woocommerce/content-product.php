@@ -74,7 +74,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 
 				<div class="owl-product-gallery">
-					<img src="' . $image_url . '" alt="" width="640" />
+					<img src="<?php echo $image_url ?>" alt="" width="640" />
 				</div>
 
 
