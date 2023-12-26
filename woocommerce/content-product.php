@@ -52,5 +52,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                         <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
                                     </div>
                                 </div>
-    </article>
+                            </article>
 
+</div>
