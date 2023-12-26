@@ -59,17 +59,16 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             </div>
 </article>
 
-echo '<div class="popup-title">';
-           echo '<div class="h1 title">';
-             echo  ' ' . get_the_title() . '';
-              echo  '<small>product category</small>';
-            echo '</div>';
-        echo '</div>';
+<div class="popup-title">
+           <div class="h1 title">
+              <small>product category</small>
+            </div>
+        </div>
 
 
-        echo '<div class="owl-product-gallery">';
-            echo '<img src="' . $image_url . '" alt="" width="640" />';
-        echo '</div>';
+        <div class="owl-product-gallery">
+            <img src="' . $image_url . '" alt="" width="640" />
+        </div>
 
 
         <div class="popup-content">
