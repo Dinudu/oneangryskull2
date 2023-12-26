@@ -24,34 +24,34 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div class="col-xs-6 col-sm-4 col-lg-4">
+
+<div class="col-xs-6 col-sm-4 col-lg-3">
 <article>
-                                <div class="info">
-                                    <span class="add-favorite">
-                                        <a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>
-                                    </span>
-                                    <span>
-                                        <a href="#' . $image_id . '" class="mfp-open" data-title="Quick wiew"><i class="icon icon-eye"></i></a>
-                                    </span>
-                                </div>
-                                <div class="btn btn-add">
-                                    <i class="icon icon-cart"></i>
-                                </div>
-                                <div class="figure-grid">
-                                    <div class="image">
-                                        <a href="#' . $image_id . '" class="mfp-open">
-                                            <img src="" alt="" width="360">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <h2 class="title h4">
-                                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                        </h2>
-                                        <sub><?php echo $product->get_price_html(); ?></sub>
-                                        <sup>$ 139,-</sup>
-                                        <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
-                                    </div>
-                                </div>
-                            </article>
+            <div class="info">
+                <span class="add-favorite">
+                    <a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>
+                </span>
+                <span>
+                    <a href="#' . $image_id . '" class="mfp-open" data-title="Quick wiew"><i class="icon icon-eye"></i></a>
+                </span>
+            </div>
+            <div class="btn btn-add">
+                <i class="icon icon-cart"></i>
+            </div>
+            <div class="figure-grid">
+                <div class="image">
+                    <a href="#' . $image_id . '" class="mfp-open">
+                        <img src="" alt="" width="360">
+                    </a>
+                </div>
+                <div class="text">
+                    <h2 class="title h4">
+                        <a href="<?php  the_permalink(); ?>"><?php the_title(); ?></a>
+                    </h2>
+                    <sub><?php echo $product->get_price_html(); ?></sub>
+                    <span class="description clearfix"></span>
+                </div>
+            </div>
+</article>
 
 </div>
