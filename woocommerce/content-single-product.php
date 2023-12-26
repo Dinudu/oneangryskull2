@@ -51,7 +51,7 @@ if ( post_password_required() ) {
 
                                 <!-- === product-title === -->
 
-                                <h1 class="title" data-title="<?php the_title(); ?>">
+                                <h1 class="title" data-title="">
 									<?php the_title(); ?>
                                     <small>Free shipping</small>
                                 </h1>
@@ -609,3 +609,4 @@ if ( post_password_required() ) {
                 </div> <!--/container-->
             </div> <!--/info-->
 </section>
+</div>
