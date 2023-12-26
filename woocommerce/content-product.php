@@ -37,7 +37,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                     <a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>
                 </span>
                 <span>
-                    <a href="#' . $image_id . '" class="mfp-open" data-title="Quick View"><i class="icon icon-eye"></i></a>
+                    <a href="#'<?php echo $image_id ?>" class="mfp-open" data-title="Quick View"><i class="icon icon-eye"></i></a>
                 </span>
             </div>
             <div class="btn btn-add">
@@ -46,7 +46,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             <div class="figure-grid">
                 <div class="image">
                     <a href="' . $image_id . '" class="mfp-open">
-                        <img src="<?php $image_path; ?>" alt="" width="360">
+                        <img src="<?php echo $image_path ?>" alt="" width="360">
                     </a>
                 </div>
                 <div class="text">
