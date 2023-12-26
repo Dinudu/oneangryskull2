@@ -18,6 +18,11 @@
 defined( 'ABSPATH' ) || exit;
 
 global $product;
+// Get the product image ID
+$image_id = get_post_thumbnail_id( $product->get_id() );
+
+// Get the product image path
+$image_path = wp_get_attachment_image_src( $image_id, 'full' );
 
 // Ensure visibility.
 if ( empty( $product ) || ! $product->is_visible() ) {
@@ -32,7 +37,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                     <a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>
                 </span>
                 <span>
-                    <a href="#' . $image_id . '" class="mfp-open" data-title="Quick wiew"><i class="icon icon-eye"></i></a>
+                    <a href="#' . $image_id . '" class="mfp-open" data-title="Quick View"><i class="icon icon-eye"></i></a>
                 </span>
             </div>
             <div class="btn btn-add">
@@ -40,7 +45,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             </div>
             <div class="figure-grid">
                 <div class="image">
-                    <a href="#' . $image_id . '" class="mfp-open">
+                    <a href="<?php $image_path; ?>' . $image_id . '" class="mfp-open">
                         <img src="" alt="" width="360">
                     </a>
                 </div>
