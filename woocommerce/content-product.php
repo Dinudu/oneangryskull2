@@ -33,6 +33,21 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 ?>
 
 <div class="col-xs-6 col-sm-4 col-lg-3">
+<style>
+	.products article .info a {
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+</style>
 <article>
             <div class="info" style="display:block;">
                 <span class="add-favorite">
