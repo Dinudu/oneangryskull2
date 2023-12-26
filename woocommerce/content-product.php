@@ -37,7 +37,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                     <a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>
                 </span>
                 <span>
-                    <a href="#'<?php echo $image_id ?>" class="mfp-open" data-title="Quick View"><i class="icon icon-eye"></i></a>
+                    <a href="#<?php echo $image_id ?>" class="mfp-open" data-title="Quick View"><i class="icon icon-eye"></i></a>
                 </span>
             </div>
             <div class="btn btn-add">
@@ -45,7 +45,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             </div>
             <div class="figure-grid">
                 <div class="image">
-                    <a href="' . $image_id . '" class="mfp-open">
+                    <a href="#<?php echo $image_id ?>" class="mfp-open">
                         <img src="<?php echo $image_path ?>" alt="" width="360">
                     </a>
                 </div>
@@ -58,5 +58,80 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                 </div>
             </div>
 </article>
+
+echo '<div class="popup-title">';
+           echo '<div class="h1 title">';
+             echo  ' ' . get_the_title() . '';
+              echo  '<small>product category</small>';
+            echo '</div>';
+        echo '</div>';
+
+
+        echo '<div class="owl-product-gallery">';
+            echo '<img src="' . $image_url . '" alt="" width="640" />';
+        echo '</div>';
+
+
+        <div class="popup-content">
+           <div class="product-info-wrapper">
+                <div class="row">
+
+
+                <div class="col-sm-6">
+                <div class="info-box">
+                <strong>Maifacturer</strong>
+                <span>Brand name</span>
+                </div>
+                <div class="info-box">
+            	<strong>Materials</strong>
+                <span>Wood, Leather, Acrylic</span>
+                </div>
+                <div class="info-box">
+                    <strong>Availability</strong>
+                        <span><i class="fa fa-check-square-o"></i> in stock</span>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6">
+                <div class="info-box">
+                	<strong>Available Colors</strong>
+                        <div class="product-colors clearfix">
+                            <span class="color-btn color-btn-red"></span>
+                            <span class="color-btn color-btn-blue checked"></span>
+                            <span class="color-btn color-btn-green"></span>
+                            <span class="color-btn color-btn-gray"></span>
+                            <span class="color-btn color-btn-biege"></span>
+                        </div>
+                        </div>
+                        <div class="info-box">
+                            <strong>Choose size</strong>
+                            <div class="product-colors clearfix">
+                                <span class="color-btn color-btn-biege">S</span>
+                                <span class="color-btn color-btn-biege checked">M</span>
+                                <span class="color-btn color-btn-biege">XL</span>
+                                <span class="color-btn color-btn-biege">XXL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+        </div> 
+
+
+    <div class="popup-table">
+            <div class="popup-cell">
+                <div class="price">
+                    <span class="h3"></span>
+                </div>
+            </div>
+            <div class="popup-cell">
+                <div class="popup-buttons">
+                    <a href="' . get_permalink() . '"><span class="icon icon-eye"></span> <span class="hidden-xs">View more</span></a>
+                    <a href="' . get_permalink() . '"><span class="icon icon-cart"></span> <span class="hidden-xs">Buy</span></a>
+                </div>
+            </div>
+        </div>
 
 </div>
