@@ -30,12 +30,12 @@ $image_url = wp_get_attachment_url($image_id);
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
-get_header();
 ?>
 
 
 
 <div class="col-xs-6 col-sm-4 col-lg-3">
+<div class="row row-clean">
 
 <article>
         <div class="info" style="display:block;">
