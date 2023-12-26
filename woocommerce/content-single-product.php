@@ -217,7 +217,7 @@ if ( post_password_required() ) {
                                         <h3>About this Item</h3>
                                         <p>
 										<?php echo $product->get_description_html(); ?>
-										<?php echo $product->post->post_excerpt  ?>
+										<?php echo $product->post_excerpt  ?>
 
                                         </p>
 
