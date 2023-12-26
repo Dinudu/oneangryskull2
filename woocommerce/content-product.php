@@ -40,14 +40,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                 <div class="figure-grid">
                                     <div class="image">
                                         <a href="#productid1" class="mfp-open">
-                                            <img src="<?php the_post_thumbnail('shop_catalog'); ?>" alt="" width="360">
+                                            <img src="" alt="" width="360">
                                         </a>
                                     </div>
                                     <div class="text">
                                         <h2 class="title h4">
-                                            <a href="product.html">Coffee machine</a>
+                                            <a href="product.html"><?php get_the_title(); ?></a>
                                         </h2>
-                                        <sub>$ 159,-</sub>
+                                        <sub><?php $product->get_price_html(); ?></sub>
                                         <sup>$ 139,-</sup>
                                         <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
                                     </div>
