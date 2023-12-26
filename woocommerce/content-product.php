@@ -34,7 +34,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 <div class="col-xs-6 col-sm-4 col-lg-3">
 <article>
-            <div class="info">
+            <div class="info" style="display:block;">
                 <span class="add-favorite">
                     <a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>
                 </span>
