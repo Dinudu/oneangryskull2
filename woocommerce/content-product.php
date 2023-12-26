@@ -47,7 +47,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                         <h2 class="title h4">
                                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                         </h2>
-                                        <sub><?php $product->get_price_html(); ?></sub>
+                                        <sub><?php echo $product->get_price_html(); ?></sub>
                                         <sup>$ 139,-</sup>
                                         <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
                                     </div>
