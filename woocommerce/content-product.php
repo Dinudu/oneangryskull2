@@ -23,6 +23,8 @@ $image_id = get_post_thumbnail_id( $product->get_id() );
 
 // Get the product image path
 $image_path = wp_get_attachment_image_src( $image_id, 'full' );
+$image_url = wp_get_attachment_url($image_id);
+
 
 // Ensure visibility.
 if ( empty( $product ) || ! $product->is_visible() ) {
@@ -46,7 +48,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             <div class="figure-grid">
                 <div class="image">
                     <a href="#<?php echo $image_id ?>" class="mfp-open">
-                        <img src="<?php echo $image_path ?>" alt="" width="360">
+                        <img src="<?php echo $image_url ?>" alt="" width="360">
                     </a>
                 </div>
                 <div class="text">
@@ -66,6 +68,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		<div class="popup-title">
 				<div class="h1 title">
 					<small>product category</small>
+					<?php the_title(); ?>
 					</div>
 				</div>
 
