@@ -216,9 +216,9 @@ if ( post_password_required() ) {
                                     <div class="content">
                                         <h3>About this Item</h3>
                                         <p>
-                                            While we aim to provide accurate product information, it is provided by manufacturers, suppliers and others, and has not been verified by us. See our disclaimer.
-                                            The beauty of the Q7C arc is a visual spectacle. Equipped with the features of the Q7 Flat, but with a bend for immersive viewing, it combines Q Color and an anti-glare screen for a dazzling display unlike any other.
-                                            Brandname 65" Class 4K(2160P) Curved Smart QLED TV QN65Q7CN (2018 Model)
+										<?php echo $product->get_description_html(); ?>
+										<?php echo $product->post->post_excerpt  ?>
+
                                         </p>
 
                                         <hr>
