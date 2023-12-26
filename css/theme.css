@@ -443,6 +443,13 @@ select {
     margin-bottom: 30px;
 }
 
+.imgbot
+{
+    width: 225px;
+    padding-top: 81px;
+    padding-bottom: 54px;
+}
+
 .btn.btn-buy {
     background-color: #000;
     color: white;

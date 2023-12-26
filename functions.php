@@ -157,7 +157,7 @@ function display_home_products(){
             echo '<div class="figure-grid">'
             ;
             echo '<div class="">';
-            echo '<a  href="#' . $image_id . '" " class="mfp-open"> <img src="' . $image_url . '" alt="' . get_the_title() . '" width="360">';
+            echo '<a  href="#' . $image_id . '" " class="mfp-open"> <img class="imgbot" src="' . $image_url . '" alt="' . get_the_title() . '" width="360">';
              echo '</a>';
             echo '</div>';
             echo '<div class="text">';
