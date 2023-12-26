@@ -45,8 +45,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             </div>
             <div class="figure-grid">
                 <div class="image">
-                    <a href="<?php $image_path; ?>' . $image_id . '" class="mfp-open">
-                        <img src="" alt="" width="360">
+                    <a href="' . $image_id . '" class="mfp-open">
+                        <img src="<?php $image_path; ?>" alt="" width="360">
                     </a>
                 </div>
                 <div class="text">
