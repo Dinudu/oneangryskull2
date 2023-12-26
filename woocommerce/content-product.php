@@ -31,7 +31,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                         <a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>
                                     </span>
                                     <span>
-                                        <a href="<?php the_permalink(); ?>" class="mfp-open" data-title="Quick wiew"><i class="icon icon-eye"></i></a>
+                                        <a href="#' . $image_id . '" class="mfp-open" data-title="Quick wiew"><i class="icon icon-eye"></i></a>
                                     </span>
                                 </div>
                                 <div class="btn btn-add">
@@ -39,13 +39,13 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                 </div>
                                 <div class="figure-grid">
                                     <div class="image">
-                                        <a href="#productid1" class="mfp-open">
+                                        <a href="#' . $image_id . '" class="mfp-open">
                                             <img src="" alt="" width="360">
                                         </a>
                                     </div>
                                     <div class="text">
                                         <h2 class="title h4">
-                                            <a href="product.html"><?php get_the_title(); ?></a>
+                                            <a href="<?php the_permalink(); ?>"><?php get_the_title(); ?></a>
                                         </h2>
                                         <sub><?php $product->get_price_html(); ?></sub>
                                         <sup>$ 139,-</sup>
