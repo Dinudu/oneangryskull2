@@ -47,9 +47,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                 <i class="icon icon-cart"></i>
             </div>
             <div class="figure-grid">
-                <div class="imgbot">
+                <div class="">
                     <a href="#<?php echo $image_id ?>" class="mfp-open">
-                        <img src="<?php echo $image_url ?>" alt="" width="360">
+                        <img class="imgbot" src="<?php echo $image_url ?>" alt="" width="360">
                     </a>
                 </div>
                 <div class="text">
