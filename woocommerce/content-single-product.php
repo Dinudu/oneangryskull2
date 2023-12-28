@@ -216,12 +216,15 @@ if ( post_password_required() ) {
                                     <div class="content">
                                         <h3>About this Item</h3>
                                         <p>
-										<?php echo apply_filters( 'woocommerce_short_description', $product->post->post_excerpt ) ?>
-                                        </p>
+                                        <?php 
+                                            global $product;
+                                            echo $product->get_excerpt(); 
+                                        ?>                                       
+                                         </p>
 
                                         <hr>
 
-                                        <div class="row">
+                                    
                                             <div class="col-md-4">
                                                 <h3>Key Features</h3>
                                                 <ul>
