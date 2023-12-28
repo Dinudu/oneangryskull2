@@ -126,7 +126,7 @@ if ( post_password_required() ) {
                                             // For the attribute 'pa_size'
                                             $product_size = $product->get_attribute('pa_size');
                                             if ($product_size) {
-                                                echo 'Size: ' . $product_size . '<br>';
+                                                echo 'Size: <span class="product-size">'. $product_size . '</span>';
                                             }
                                         ?>
                                     </div>
