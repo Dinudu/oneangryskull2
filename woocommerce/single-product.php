@@ -209,7 +209,8 @@ get_header( 'shop' ); ?>
                                     <div class="content">
                                         <h3>About this Item</h3>
                                         <p>
-                                            <?php echo $product->get_description(); ?>
+                                            <?php global $product;
+                                             echo $product->get_description(); ?>
 
                                         </p>
 
@@ -233,40 +234,22 @@ get_header( 'shop' ); ?>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <th>Screen Size</th>
-                                                    <td>
-                                                        <div>65\"</div>
-                                                    </td>
+                                                 
                                                 </tr>
                                                 <tr>
-                                                    <th>Brand</th>
-                                                    <td>
-                                                        <div>Brandname</div>
-                                                    </td>
+                                                   
                                                 </tr>
                                                 <tr>
-                                                    <th>Assembled Product Weight</th>
-                                                    <td>
-                                                        <div>87.1 oz</div>
-                                                    </td>
+                                                   
                                                 </tr>
                                                 <tr>
-                                                    <th>Condition</th>
-                                                    <td>
-                                                        <div>New</div>
-                                                    </td>
+                                                  
                                                 </tr>
                                                 <tr>
-                                                    <th>ID</th>
-                                                    <td>
-                                                        <div>qn65q7cnafxza</div>
-                                                    </td>
+                                                   
                                                 </tr>
                                                 <tr>
-                                                    <th>Dimensions (L x W x H)</th>
-                                                    <td>
-                                                        <div>8.30 x 63.70 x 37.80 Inches</div>
-                                                    </td>
+                                                   
                                                 </tr>
                                             </tbody>
                                         </table>
