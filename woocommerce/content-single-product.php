@@ -577,20 +577,8 @@ if ( post_password_required() ) {
                                                             <p>Your email address will not be published.</p>
                                                         </div>
 
-                                                        <form action="#" method="post">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="name" value="" placeholder="Your Name">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="name" value="" placeholder="Your Email">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <textarea rows="10" class="form-control" placeholder="Your comment"></textarea>
-                                                            </div>
-                                                            <div class="clearfix text-center">
-                                                                <a href="#" class="btn btn-main">Add comment</a>
-                                                            </div>
-                                                        </form>
+                                                        <?php comments_template(); ?>
+
 
                                                     </div><!--/comment-add-->
                                                 </div> <!--/comments-->
@@ -607,3 +595,5 @@ if ( post_password_required() ) {
             </div> <!--/info-->
 </section>
 </div>
+
+<?php woocommerce_output_related_products(); ?>
