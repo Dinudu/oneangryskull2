@@ -147,9 +147,26 @@ if ( post_password_required() ) {
                             <!-- === product gallery === -->
 
                             <div class="owl-product-gallery open-popup-gallery owl-carousel owl-theme" style="opacity: 1; display: block;">
-                                <div class="owl-wrapper-outer autoHeight" style="height: 562.5px;"><div class="owl-wrapper" style="width: 3000px; left: 0px; display: block;"><div class="owl-item" style="width: 750px;"><a href="assets/images/product-10.png"><img src="assets/images/product-10.png" alt="" height="500"></a></div><div class="owl-item" style="width: 750px;"><a href="assets/images/product-10a.png"><img src="assets/images/product-10a.png" alt="" height="500"></a></div></div></div>
-                                
-                            <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"><span class="icon icon-chevron-left"></span></div><div class="owl-next"><span class="icon icon-chevron-right"></span></div></div></div></div>
+                            <?php 
+                                global $product;
+                                $attachment_ids = $product->get_gallery_image_ids();
+                                if($attachment_ids) {
+                                    echo '<ul class="thumbnails">';
+                                    foreach($attachment_ids as $attachment_id) {
+                                        echo '<li class="product-thumbnail">';
+                                        echo wp_get_attachment_image($attachment_id, 'shop_catalog');
+                                        echo '</li>';
+                                    }
+                                    echo '</ul>';
+                                } else {
+                                    echo '<ul class="thumbnails">';
+                                    echo '<li class="product-thumbnail">';
+                                    echo woocommerce_get_product_thumbnail();
+                                    echo '</li>';
+                                    echo '</ul>';
+                                }
+                            ?>
+                             
                         </div>
 
                     </div>
