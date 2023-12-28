@@ -51,7 +51,7 @@ if ( post_password_required() ) {
 
                                 <!-- === product-title === -->
 
-                                <h1 class="title" data-title="">
+                                <h1 class="title" data-title="<?php $product_categories = wc_get_product_category_list( $product->get_id() ); echo implode(', ', $product_categories); ?>">
 									<?php the_title(); ?>
                                     <small>Free shipping</small>
                                 </h1>
@@ -231,27 +231,7 @@ if ( post_password_required() ) {
                                                     <li>Smart Functionality: yes</li>
                                                 </ul>
                                             </div>
-                                            <div class="col-md-4">
-                                                <h3>Connectivity</h3>
-                                                <ul>
-                                                    <li>HDMI Inputs: yes, 4</li>
-                                                    <li>USB Ports: yes, 3</li>
-                                                    <li>Built-in Wi-Fi: yes</li>
-                                                    <li>Stereo speakers: yes</li>
-                                                    <li>Bluetooth: yes</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <h3>Style Elite</h3>
-                                                <ul>
-                                                    <li>One invisible connection</li>
-                                                    <li>One Connect Box</li>
-                                                    <li>No gap wall mount</li>
-                                                    <li>Ultra wide viewing angle</li>
-                                                    <li>Ambient mode</li>
-                                                    <li>Boundless 360 design</li>
-                                                </ul>
-                                            </div>
+                                           
                                         </div> <!--/row-->
 
                                     </div> <!--/content-->
