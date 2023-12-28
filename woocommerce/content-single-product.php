@@ -112,29 +112,25 @@ if ( post_password_required() ) {
                                     <!-- === info-box === -->
 
                                     <div class="info-box">
-                                        <span><strong>Available Colors</strong></span>
-                                        <div class="product-colors clearfix">
-                                            <span class="color-btn color-btn-red"></span>
-                                            <span class="color-btn color-btn-blue checked"></span>
-                                            <span class="color-btn color-btn-green"></span>
-                                            <span class="color-btn color-btn-gray"></span>
-                                            <span class="color-btn color-btn-biege"></span>
-                                        </div>
+                                    <span><strong>Choose size</strong></span>
+                                    <div class="product-colors clearfix">
+                                        <?php 
+                                            global $product;
+                                            
+                                            // For the attribute 'pa_color'
+                                            $product_color = $product->get_attribute('pa_color');
+                                            if ($product_color) {
+                                                echo 'Color: ' . $product_color . '<br>';
+                                            }
+                                            
+                                            // For the attribute 'pa_size'
+                                            $product_size = $product->get_attribute('pa_size');
+                                            if ($product_size) {
+                                                echo 'Size: ' . $product_size . '<br>';
+                                            }
+                                        ?>
                                     </div>
-
-                                    <!-- === info-box === -->
-
-                                    <div class="info-box">
-                                        <span><strong>Choose size</strong></span>
-                                        <div class="product-colors clearfix">
-                                            <span class="color-btn color-btn-biege">
-                                                <span class="product-size" data-text="">S</span>
-                                            </span>
-                                            <span class="color-btn color-btn-biege checked">M</span>
-                                            <span class="color-btn color-btn-biege">XL</span>
-                                            <span class="color-btn color-btn-biege">XXL</span>
-                                        </div>
-                                    </div>
+                                </div>
 
                                 </div> <!--/clearfix-->
                             </div> <!--/product-info-wrapper-->
@@ -353,95 +349,9 @@ if ( post_password_required() ) {
                                                             </div>
                                                         </div>
 
-                                                        <!-- rate -->
-                                                        <div class="rate-box">
-                                                            <strong>Design</strong>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <span>3</span>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <span>5</span>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <span>0</span>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>2</span>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star active"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>1</span>
-                                                            </div>
-                                                        </div>
+                                                      
 
-                                                        <!-- rate -->
-                                                        <div class="rate-box">
-                                                            <strong>General</strong>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>3</span>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>5</span>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>0</span>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>2</span>
-                                                            </div>
-                                                            <div class="rating">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>1</span>
-                                                            </div>
-                                                        </div>
+                                                       
 
                                                     </div>
                                                     <div class="comment-wrapper">
