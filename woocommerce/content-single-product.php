@@ -113,23 +113,21 @@ if ( post_password_required() ) {
 
                                     <div class="info-box">
                                     <span><strong>Choose size</strong></span>
-                                    <div class="product-colors clearfix">
-                                        <?php 
-                                            global $product;
-                                            
-                                            // For the attribute 'pa_color'
-                                            $product_color = $product->get_attribute('pa_color');
-                                            if ($product_color) {
-                                                echo 'Color: ' . $product_color . '<br>';
-                                            }
-                                            
-                                            // For the attribute 'pa_size'
-                                            $product_size = $product->get_attribute('pa_size');
-                                            if ($product_size) {
-                                                echo 'Size: <span class="product-size">'. $product_size . '</span>';
-                                            }
-                                        ?>
-                                    </div>
+                                    <?php
+                                    global $product;
+
+                                    // Get all product attributes
+                                    $product_attributes = wc_get_product_attributes($product->get_id());
+
+                                    // Generate dropdown menus for each attribute
+                                    foreach ($product_attributes as $attribute) {
+                                        $attribute_name = wc_attribute_label($attribute->get_name());
+                                        $attribute_values = $attribute->get_options();
+
+                                        // Create dropdown menu
+                                        woocommerce_dropdown_variation_attribute_options($attribute_values);
+                                    }
+                                    ?>
                                 </div>
 
                                 </div> <!--/clearfix-->
