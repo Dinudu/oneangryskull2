@@ -209,8 +209,10 @@ get_header( 'shop' ); ?>
                                     <div class="content">
                                         <h3>About this Item</h3>
                                         <p>
-                                            <?php global $product;
-                                             echo $product->get_description(); ?>
+                                        <?php 
+                                            global $product;
+                                            echo $product->get_excerpt(); 
+                                        ?>
 
                                         </p>
 
