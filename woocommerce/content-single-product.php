@@ -216,10 +216,7 @@ if ( post_password_required() ) {
                                     <div class="content">
                                         <h3>About this Item</h3>
                                         <p>
-                                        <?php 
-                                            global $product;
-                                            echo $product->get_excerpt(); 
-                                        ?>                                       
+                                            <?php echo $product->get_description(); ?>
                                          </p>
 
                                         <hr>
