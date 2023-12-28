@@ -216,12 +216,11 @@ if ( post_password_required() ) {
                                     <div class="content">
                                         <h3>About this Item</h3>
                                         <p>
-                                            <?php echo $product->get_description(); ?>
-                                         </p>
+                                        <?php echo $product->get_description(); ?>                                        </p>
 
                                         <hr>
 
-                                    
+                                        <div class="row">
                                             <div class="col-md-4">
                                                 <h3>Key Features</h3>
                                                 <ul>
