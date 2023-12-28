@@ -209,46 +209,13 @@ get_header( 'shop' ); ?>
                                     <div class="content">
                                         <h3>About this Item</h3>
                                         <p>
-                                            While we aim to provide accurate product information, it is provided by manufacturers, suppliers and others, and has not been verified by us. See our disclaimer.
-                                            The beauty of the Q7C arc is a visual spectacle. Equipped with the features of the Q7 Flat, but with a bend for immersive viewing, it combines Q Color and an anti-glare screen for a dazzling display unlike any other.
-                                            Brandname 65" Class 4K(2160P) Curved Smart QLED TV QN65Q7CN (2018 Model)
+                                            <?php echo $product->get_description(); ?>
+
                                         </p>
 
                                         <hr>
 
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <h3>Key Features</h3>
-                                                <ul>
-                                                    <li>Diagonal Screen Size: 64.5"</li>
-                                                    <li>Backlight Type: QLED</li>
-                                                    <li>Resolution: 2160P</li>
-                                                    <li>Effective Refresh Rate: 240Hz</li>
-                                                    <li>Smart Functionality: yes</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <h3>Connectivity</h3>
-                                                <ul>
-                                                    <li>HDMI Inputs: yes, 4</li>
-                                                    <li>USB Ports: yes, 3</li>
-                                                    <li>Built-in Wi-Fi: yes</li>
-                                                    <li>Stereo speakers: yes</li>
-                                                    <li>Bluetooth: yes</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <h3>Style Elite</h3>
-                                                <ul>
-                                                    <li>One invisible connection</li>
-                                                    <li>One Connect Box</li>
-                                                    <li>No gap wall mount</li>
-                                                    <li>Ultra wide viewing angle</li>
-                                                    <li>Ambient mode</li>
-                                                    <li>Boundless 360 design</li>
-                                                </ul>
-                                            </div>
-                                        </div> <!--/row-->
+                                       
 
                                     </div> <!--/content-->
                                 </div> <!--/tab-pane-->
@@ -604,6 +571,7 @@ get_header( 'shop' ); ?>
         </section>
 
 	
+        <?php woocommerce_output_related_products(); ?>
 
 	<?php
 		/**
