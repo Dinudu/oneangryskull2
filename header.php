@@ -375,39 +375,7 @@
 					<a href="<?php bloginfo('url'); ?>/index.php/contact-us/">Contact us </a>
 					
 				</li>
-
-				<li class="nav-settings">
-					<a href="javascript:void(0);"><span class="nav-settings-value">USD</span> <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
-					<div class="navbar-dropdown navbar-dropdown-single">
-						<div class="navbar-box">
-							<div class="box-full">
-								<div class="box clearfix">
-									<ul class="nav-settings-list">
-										<li><a href="javascript:void(0);">USD</a></li>
-										
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="nav-settings">
-					<a href="javascript:void(0);"><span class="nav-settings-value">ENG</span> <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
-					<div class="navbar-dropdown navbar-dropdown-single">
-						<div class="navbar-box">
-							<div class="box-full">
-								<div class="box clearfix">
-									<ul class="nav-settings-list">
-										<li><a href="javascript:void(0);">ENG</a></li>
-									
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<div class="cart-wrapper">
+				<div class="cart-wrapper">
 		<div class="checkout">
 			<div class="clearfix">
 			<?php custom_added_to_cart_message(); ?>
@@ -505,6 +473,38 @@
 			</div>
 		</div>
 	</div>
+				<li class="nav-settings">
+					<a href="javascript:void(0);"><span class="nav-settings-value">USD</span> <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
+					<div class="navbar-dropdown navbar-dropdown-single">
+						<div class="navbar-box">
+							<div class="box-full">
+								<div class="box clearfix">
+									<ul class="nav-settings-list">
+										<li><a href="javascript:void(0);">USD</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-settings">
+					<a href="javascript:void(0);"><span class="nav-settings-value">ENG</span> <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
+					<div class="navbar-dropdown navbar-dropdown-single">
+						<div class="navbar-box">
+							<div class="box-full">
+								<div class="box clearfix">
+									<ul class="nav-settings-list">
+										<li><a href="javascript:void(0);">ENG</a></li>
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			
 		</div>
 	</div>
 
