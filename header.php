@@ -167,17 +167,9 @@
 			<li class="left-side" style="background-color: #000;" >
 			<a href="<?php bloginfo('url'); ?>/" class="logo-icon" >
 			<img src=<?php echo get_theme_file_uri( 'img/ona.JPG' );  ?>  id="lglg" alt="Alternate Text" /></a></li>
-		<!--	
-			
-			<li class="left-side" ><a href="<?php bloginfo('url'); ?>/product-grid/">Men </a></li>
-			
-			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">Woman</a></li>
-			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">ACCESSORIES</a></li>
-			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">SPORTWEAR</a></li>
-			<li><a href="javascript:void(0);" class="open-login"><i class="icon icon-user"></i></a></li>
+			 <li><a href="javascript:void(0);" class="open-login"><i class="icon icon-user"></i></a></li>
 			<li class="r-side"><a href="javascript:void(0);" class="open-search"><i class="icon icon-magnifier"></i></a></li>
-			<li class="r-side"><a href="javascript:void(0);" class="open-cart" ><i class="icon icon-cart" ></i> <span>4</span></a></li>
-	-->
+			<li class="r-side"><a href="javascript:void(0);" class="open-cart" ><i class="icon icon-cart" ></i> <span>0</span></a></li> 
 		</ul>
 	</div>
 
