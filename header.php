@@ -407,6 +407,104 @@
 					</div>
 				</li>
 			</ul>
+			<div class="cart-wrapper">
+		<div class="checkout">
+			<div class="clearfix">
+			<?php custom_added_to_cart_message(); ?>
+
+				<!--cart item-->
+
+				<div class="row">
+
+					<div class="cart-block cart-block-item clearfix">
+						<div class="image">
+							<a href="product.html"><img src=<?php echo get_theme_file_uri( 'assets/images/product-1.png' );  ?> alt="" /></a>
+						</div>
+						<div class="title">
+							<div><a href="product.html">Product item</a></div>
+							<small>Product category</small>
+						</div>
+						<div class="quantity">
+							<input type="number" value="2" class="form-control form-quantity" />
+						</div>
+						<div class="price">
+							<span class="final">$ 1.998</span>
+							<span class="discount">$ 2.666</span>
+						</div>
+						<!--delete-this-item-->
+						<span class="icon icon-cross icon-delete"></span>
+					</div>
+
+					
+					
+					
+				</div>
+
+				<hr />
+
+				<!--cart prices -->
+
+				<div class="clearfix">
+					<div class="cart-block cart-block-footer clearfix">
+						<div>
+							<strong>Discount 15%</strong>
+						</div>
+						<div>
+							<span></span>
+						</div>
+					</div>
+
+					<div class="cart-block cart-block-footer clearfix">
+						<div>
+							<strong>Shipping</strong>
+						</div>
+						<div>
+							<span></span>
+						</div>
+					</div>
+
+					<div class="cart-block cart-block-footer clearfix">
+						<div>
+							<strong>VAT</strong>
+						</div>
+						<div>
+							<span></span>
+						</div>
+					</div>
+				</div>
+
+				<hr />
+
+				<!--cart final price -->
+
+				<div class="clearfix">
+					<div class="cart-block cart-block-footer clearfix">
+						<div>
+							<strong>Total</strong>
+						</div>
+						<div>
+							<div class="h4 title"><?php echo ' ' . WC()->cart->total; ?></div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--cart navigation -->
+
+				<div class="cart-block-buttons clearfix">
+
+					<div class="row">
+						<div class="col-xs-6">
+							<a href="products-grid.html" class="btn btn-clean-dark">Continue shopping</a>
+						</div>
+						<div class="col-xs-6 text-right">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 		</div>
 	</div>
 
