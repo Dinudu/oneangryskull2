@@ -36,7 +36,15 @@ if ( post_password_required() ) {
 
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
+<?php
 
+if ( function_exists( 'woocommerce_after_main_content' ) ) {
+    woocommerce_after_main_content();
+} else {
+    woocommerce_content_after();
+}
+
+?>
 
 <section class="product">
             <div class="main">
@@ -110,24 +118,7 @@ if ( post_password_required() ) {
                                     <hr>
 
                                     <!-- === info-box === -->
-                                    <div class="info-box">
-                                    <span><strong>Choose color</strong></span>
-                                    <?php
-                                        $attributes = $product->get_attributes();
-
-                                        // Assuming that 'Size' is the name of the attribute for sizes
-                                        if( ! empty( $attributes['pa_color'] ) ) {
-                                            $attribute = $attributes['pa_color'];
-                                            $terms = $attribute->get_terms();
-
-                                            echo '<div class="product-colors clearfix">';
-                                            foreach ( $terms as $term ) {
-                                                echo '<span class="color-btn color-btn">' . $term->name . '</span>';
-                                            }
-                                            echo '</div>';
-                                        }
-                                    ?>
-                                </div>
+                                  
                                     <div class="info-box">
                                     <span><strong>Choose size</strong></span>
                                     <?php
