@@ -313,8 +313,9 @@
 				<div class="row">
 
 					<div class="cart-block cart-block-item clearfix">
-						<div class="image">
-							<a href="product.html"><img src=<?php echo get_theme_file_uri( 'assets/images/product-1.png' );  ?> alt="" /></a>
+					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
+
+						<!-- <div class="image">
 						</div>
 						<div class="title">
 							<div><a href="product.html">Product item</a></div>
@@ -326,7 +327,7 @@
 						<div class="price">
 							<span class="final">$ 1.998</span>
 							<span class="discount">$ 2.666</span>
-						</div>
+						</div> -->
 						<!--delete-this-item-->
 						<span class="icon icon-cross icon-delete"></span>
 					</div>
@@ -361,10 +362,10 @@
 
 					<div class="cart-block cart-block-footer clearfix">
 						<div>
-							<strong>VAT</strong>
+							<strong>TAX</strong>
 						</div>
 						<div>
-							<span></span>
+							<span><?php wc_cart_totals_taxes_total_html(); ?></span>
 						</div>
 					</div>
 				</div>
@@ -392,7 +393,7 @@
 
 					<div class="row">
 						<div class="col-xs-6">
-							<a href="products-grid.html" class="btn btn-clean-dark">Continue shopping</a>
+							<a href="cart.php" class="btn btn-clean-dark">Continue shopping</a>
 						</div>
 						<div class="col-xs-6 text-right">
 						</div>
