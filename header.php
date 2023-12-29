@@ -140,41 +140,6 @@
 
 	</a>
 
-	<!-- ==========  Pre navigation ========== -->
-
-	<div class="navigation navigation-pre clearfix" style="z-index: -1;" id="top_fd">
-		<div class="row" >
-		<div class="col-md-3" >
-				<a href="#" > </a>
-			</div>
-			<div class="col-md-3">
-				<a href="#" id="fb_head" ><i class="fa-solid fa-comment" ></i>&nbsp;&nbsp; Feedback </a>
-			</div>
-			<div class="col-md-3">
-				<a href="#" id="fq_head"><i class="fa-solid fa-circle-info" ></i>&nbsp;&nbsp; FAQ</a>
-			</div>
-			<div class="col-md-3">
-				<a href="#" id="hp_head"><i class="fa-solid fa-circle-question" id="qqqsst"></i>&nbsp;&nbsp; Help Center </a>
-			</div>
-		</div>
-	</div>
-
-	<!-- ==========  Top navigation ========== -->
-
-	<div class="navigation navigation-top clearfix">
-		<ul >
-			<!--add active class for current page-->
-			<li class="left-side" style="background-color: #000;" >
-			<a href="<?php bloginfo('url'); ?>/" class="logo-icon" >
-			<img src=<?php echo get_theme_file_uri( 'img/ona.JPG' );  ?>  id="lglg" alt="Alternate Text" /></a></li>
-				<!-- ==========  Search wrapper ========== -->
-
-	<div class="search-wrapper">
-		<input class="form-control" placeholder="Search..." />
-		<button class="btn btn-main">Go!</button>
-	</div>
-
-	<!-- ==========  Login wrapper ========== -->
 
 	<div class="login-wrapper">
 		<div class="h4">Sign in</div>
@@ -293,6 +258,42 @@
 			</div>
 		</div>
 	</div>
+	<!-- ==========  Pre navigation ========== -->
+
+	<div class="navigation navigation-pre clearfix" style="z-index: -1;" id="top_fd">
+		<div class="row" >
+		<div class="col-md-3" >
+				<a href="#" > </a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" id="fb_head" ><i class="fa-solid fa-comment" ></i>&nbsp;&nbsp; Feedback </a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" id="fq_head"><i class="fa-solid fa-circle-info" ></i>&nbsp;&nbsp; FAQ</a>
+			</div>
+			<div class="col-md-3">
+				<a href="#" id="hp_head"><i class="fa-solid fa-circle-question" id="qqqsst"></i>&nbsp;&nbsp; Help Center </a>
+			</div>
+		</div>
+	</div>
+
+	<!-- ==========  Top navigation ========== -->
+
+	<div class="navigation navigation-top clearfix">
+		<ul >
+			<!--add active class for current page-->
+			<li class="left-side" style="background-color: #000;" >
+			<a href="<?php bloginfo('url'); ?>/" class="logo-icon" >
+			<img src=<?php echo get_theme_file_uri( 'img/ona.JPG' );  ?>  id="lglg" alt="Alternate Text" /></a></li>
+				<!-- ==========  Search wrapper ========== -->
+
+	<div class="search-wrapper">
+		<input class="form-control" placeholder="Search..." />
+		<button class="btn btn-main">Go!</button>
+	</div>
+
+	<!-- ==========  Login wrapper ========== -->
+
 		<!--	
 			
 			<li class="left-side" ><a href="<?php bloginfo('url'); ?>/product-grid/">Men </a></li>
