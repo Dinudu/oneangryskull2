@@ -194,7 +194,7 @@ function display_home_products(){
         echo '</div>';
 
 
-        echo '<div class="owl-product-gallery">';
+        echo '<div class="owl-item" style="width: 640px;">';
             echo '<img src="' . $image_url . '" alt="" width="640" />';
         echo '</div>';
 
