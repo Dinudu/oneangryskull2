@@ -36,15 +36,7 @@ if ( post_password_required() ) {
 
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
-<?php
 
-if ( function_exists( 'woocommerce_after_main_content' ) ) {
-    woocommerce_after_main_content();
-} else {
-    woocommerce_content_after();
-}
-
-?>
 
 <section class="product">
             <div class="main">
@@ -92,11 +84,20 @@ if ( function_exists( 'woocommerce_after_main_content' ) ) {
 
                                     <!-- === info-box === -->
 
-                                    <div class="info-box">
-                                        <span><strong>Availability</strong></span>
-                                        <span><i class="fa fa-check-square-o"></i> In stock</span>
-                                        <span class="hidden"><i class="fa fa-truck"></i> Out of stock</span>
-                                    </div>
+                                    
+                                        <?php
+                                            global $product;
+                                            $stock_status = $product->get_stock_status();
+                                        ?>
+                                        <div class="info-box">
+                                            <span><strong>Availability</strong></span>
+                                            <?php if ( 'instock' === $stock_status ) : ?>
+                                            <span><i class="fa fa-check-square-o"></i> In stock</span>
+                                            <?php elseif ( 'outofstock' === $stock_status ) : ?>
+                                            <span><i class="fa fa-truck"></i> Out of stock</span>
+                                            <?php endif; ?>
+                                      
+                                        </div>
 
                                     <hr>
 
