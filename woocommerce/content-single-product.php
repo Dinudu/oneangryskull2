@@ -121,11 +121,11 @@ if ( post_password_required() ) {
                                             $attribute = $attributes['pa_size'];
                                             $terms = $attribute->get_terms();
 
-                                            echo '<ul class="sizes">';
+                                            echo '<div class="product-colors clearfix">';
                                             foreach ( $terms as $term ) {
-                                                echo '<li>' . $term->name . '</li>';
+                                                echo '<span class="color-btn color-btn-biege">' . $term->name . '</span>';
                                             }
-                                            echo '</ul>';
+                                            echo '</div>';
                                         }
                                     ?>
                                 </div>
