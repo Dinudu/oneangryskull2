@@ -113,7 +113,21 @@ if ( post_password_required() ) {
 
                                     <div class="info-box">
                                     <span><strong>Choose size</strong></span>
-                                    <?php get_template_part('product-dropdowns'); ?>
+                                    <?php
+                                        $attributes = $product->get_attributes();
+
+                                        // Assuming that 'Size' is the name of the attribute for sizes
+                                        if( ! empty( $attributes['pa_size'] ) ) {
+                                            $attribute = $attributes['pa_size'];
+                                            $terms = $attribute->get_terms();
+
+                                            echo '<ul class="sizes">';
+                                            foreach ( $terms as $term ) {
+                                                echo '<li>' . $term->name . '</li>';
+                                            }
+                                            echo '</ul>';
+                                        }
+                                    ?>
                                 </div>
 
                                 </div> <!--/clearfix-->
