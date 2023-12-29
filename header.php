@@ -167,124 +167,7 @@
 			<li class="left-side" style="background-color: #000;" >
 			<a href="<?php bloginfo('url'); ?>/" class="logo-icon" >
 			<img src=<?php echo get_theme_file_uri( 'img/ona.JPG' );  ?>  id="lglg" alt="Alternate Text" /></a></li>
-		<!--	
-			
-			<li class="left-side" ><a href="<?php bloginfo('url'); ?>/product-grid/">Men </a></li>
-			
-			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">Woman</a></li>
-			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">ACCESSORIES</a></li>
-			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">SPORTWEAR</a></li>
-			<li><a href="javascript:void(0);" class="open-login"><i class="icon icon-user"></i></a></li>
-			<li class="r-side"><a href="javascript:void(0);" class="open-search"><i class="icon icon-magnifier"></i></a></li>
-			<li class="r-side"><a href="javascript:void(0);" class="open-cart" ><i class="icon icon-cart" ></i> <span>4</span></a></li>
-	-->
-		</ul>
-	</div>
-
-	<!-- ==========  Main navigation ========== -->
-
-	<div class="navigation navigation-main">
-		<a href="#" class="open-login"><i class="icon icon-user"></i></a>
-		<a href="#" class="open-search"><i class="icon icon-magnifier"></i></a>
-		<a href="#" class="open-cart"><i class="icon icon-cart"></i> <span>4</span></a>
-		<a href="#" class="open-menu"><i class="icon icon-menu"></i></a>
-		<div class="floating-menu">
-			<!--mobile toggle menu trigger-->
-			<div class="close-menu-wrapper">
-				<span class="close-menu"><i class="icon icon-cross"></i></span>
-			</div>
-			<!--<ul style="margin-left: -100px;">-->
-				<ul style="margin-left: 40px;">
-				<li>
-					<a href="<?php bloginfo('url'); ?>/">Home <!--<i class="fa fa-angle-down"></i></span>--></a>
-					
-				</li>
-				<li>
-					<a href="<?php bloginfo('url'); ?>/index.php/about-us/">About us <!--<span class="open-dropdown"><i class="fa fa-angle-down"></i></span>--></a>
-					
-				</li>
-				<!--<li>
-					<a href="#">Shop <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
-					<div class="navbar-dropdown navbar-dropdown-single">
-						<div class="navbar-box">
-							<div class="box-full">
-								<div class="box clearfix">
-									<ul>
-									
-										<li><a href="<?php bloginfo('url'); ?>/category/">Products categories</a></li>
-										<li><a href="<?php bloginfo('url'); ?>/product-grid/">Products grid</a></li>
-										<li><a href="<?php bloginfo('url'); ?>/product-list/">Products list</a></li>
-										
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>-->
-				
-				<li>
-					<a href="<?php bloginfo('url'); ?>/shop/">SHOP <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
-					<div class="navbar-dropdown navbar-dropdown-single">
-						<div class="navbar-box">
-							<div class="box-full">
-								<div class="box clearfix">
-									<ul>
-										
-										<li><a href="<?php bloginfo('url'); ?>/product-category/men/">MEN</a></li>
-										<li><a href="<?php bloginfo('url'); ?>/product-category/women/">WOMAN</a></li>
-										<li><a href="<?php bloginfo('url'); ?>/product-category/accesories/">ACCESSORIES</a></li>
-										<li><a href="<?php bloginfo('url'); ?>/product-category/sportswear/">SPORTWEAR</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<a href="<?php bloginfo('url'); ?>/index.php/blog-grid/">Blog <!--<span class="open-dropdown"><i class="fa fa-angle-down"></i></span>--></a>
-					
-				</li>
-				<li>
-					<a href="<?php bloginfo('url'); ?>/index.php/contact-us/">Contact us </a>
-					
-				</li>
-
-				<li class="nav-settings">
-					<a href="javascript:void(0);"><span class="nav-settings-value">USD</span> <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
-					<div class="navbar-dropdown navbar-dropdown-single">
-						<div class="navbar-box">
-							<div class="box-full">
-								<div class="box clearfix">
-									<ul class="nav-settings-list">
-										<li><a href="javascript:void(0);">USD</a></li>
-										<li><a href="javascript:void(0);">EUR</a></li>
-										<li><a href="javascript:void(0);">GBP</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li class="nav-settings">
-					<a href="javascript:void(0);"><span class="nav-settings-value">ENG</span> <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
-					<div class="navbar-dropdown navbar-dropdown-single">
-						<div class="navbar-box">
-							<div class="box-full">
-								<div class="box clearfix">
-									<ul class="nav-settings-list">
-										<li><a href="javascript:void(0);">ENG</a></li>
-									
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- ==========  Search wrapper ========== -->
+				<!-- ==========  Search wrapper ========== -->
 
 	<div class="search-wrapper">
 		<input class="form-control" placeholder="Search..." />
@@ -388,7 +271,7 @@
 							<strong>Total</strong>
 						</div>
 						<div>
-							<div class="h4 title"></div>
+							<div class="h4 title"><?php echo ' ' . WC()->cart->total; ?></div>
 						</div>
 					</div>
 				</div>
@@ -410,6 +293,123 @@
 			</div>
 		</div>
 	</div>
+		<!--	
+			
+			<li class="left-side" ><a href="<?php bloginfo('url'); ?>/product-grid/">Men </a></li>
+			
+			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">Woman</a></li>
+			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">ACCESSORIES</a></li>
+			<li class="left-side"><a href="<?php bloginfo('url'); ?>/product-grid/">SPORTWEAR</a></li>
+			<li><a href="javascript:void(0);" class="open-login"><i class="icon icon-user"></i></a></li>
+			<li class="r-side"><a href="javascript:void(0);" class="open-search"><i class="icon icon-magnifier"></i></a></li>
+			<li class="r-side"><a href="javascript:void(0);" class="open-cart" ><i class="icon icon-cart" ></i> <span>4</span></a></li>
+	-->
+		</ul>
+	</div>
+
+	<!-- ==========  Main navigation ========== -->
+
+	<div class="navigation navigation-main">
+		<a href="#" class="open-login"><i class="icon icon-user"></i></a>
+		<a href="#" class="open-search"><i class="icon icon-magnifier"></i></a>
+		<a href="#" class="open-cart"><i class="icon icon-cart"></i> <span>4</span></a>
+		<a href="#" class="open-menu"><i class="icon icon-menu"></i></a>
+		<div class="floating-menu">
+			<!--mobile toggle menu trigger-->
+			<div class="close-menu-wrapper">
+				<span class="close-menu"><i class="icon icon-cross"></i></span>
+			</div>
+			<!--<ul style="margin-left: -100px;">-->
+				<ul style="margin-left: 40px;">
+				<li>
+					<a href="<?php bloginfo('url'); ?>/">Home <!--<i class="fa fa-angle-down"></i></span>--></a>
+					
+				</li>
+				<li>
+					<a href="<?php bloginfo('url'); ?>/index.php/about-us/">About us <!--<span class="open-dropdown"><i class="fa fa-angle-down"></i></span>--></a>
+					
+				</li>
+				<!--<li>
+					<a href="#">Shop <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
+					<div class="navbar-dropdown navbar-dropdown-single">
+						<div class="navbar-box">
+							<div class="box-full">
+								<div class="box clearfix">
+									<ul>
+									
+										<li><a href="<?php bloginfo('url'); ?>/category/">Products categories</a></li>
+										<li><a href="<?php bloginfo('url'); ?>/product-grid/">Products grid</a></li>
+										<li><a href="<?php bloginfo('url'); ?>/product-list/">Products list</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>-->
+				
+				<li>
+					<a href="<?php bloginfo('url'); ?>/shop/">SHOP <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
+					<div class="navbar-dropdown navbar-dropdown-single">
+						<div class="navbar-box">
+							<div class="box-full">
+								<div class="box clearfix">
+									<ul>
+										
+										<li><a href="<?php bloginfo('url'); ?>/product-category/men/">MEN</a></li>
+										<li><a href="<?php bloginfo('url'); ?>/product-category/women/">WOMAN</a></li>
+										<li><a href="<?php bloginfo('url'); ?>/product-category/accesories/">ACCESSORIES</a></li>
+										<li><a href="<?php bloginfo('url'); ?>/product-category/sportswear/">SPORTWEAR</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="<?php bloginfo('url'); ?>/index.php/blog-grid/">Blog <!--<span class="open-dropdown"><i class="fa fa-angle-down"></i></span>--></a>
+					
+				</li>
+				<li>
+					<a href="<?php bloginfo('url'); ?>/index.php/contact-us/">Contact us </a>
+					
+				</li>
+
+				<li class="nav-settings">
+					<a href="javascript:void(0);"><span class="nav-settings-value">USD</span> <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
+					<div class="navbar-dropdown navbar-dropdown-single">
+						<div class="navbar-box">
+							<div class="box-full">
+								<div class="box clearfix">
+									<ul class="nav-settings-list">
+										<li><a href="javascript:void(0);">USD</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-settings">
+					<a href="javascript:void(0);"><span class="nav-settings-value">ENG</span> <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
+					<div class="navbar-dropdown navbar-dropdown-single">
+						<div class="navbar-box">
+							<div class="box-full">
+								<div class="box clearfix">
+									<ul class="nav-settings-list">
+										<li><a href="javascript:void(0);">ENG</a></li>
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
 </div>
 </nav>
 
