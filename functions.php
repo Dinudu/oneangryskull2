@@ -221,29 +221,8 @@ function display_home_products(){
 
 
                   echo ' <div class="col-sm-6">
-                        <div class="info-box">
-                            <strong>Available Colors</strong>
-                            <div class="product-colors clearfix">
-                                <span class="color-btn color-btn-red"></span>
-                                <span class="color-btn color-btn-blue checked"></span>
-                                <span class="color-btn color-btn-green"></span>
-                                <span class="color-btn color-btn-gray"></span>
-                                <span class="color-btn color-btn-biege"></span>
-                            </div>
-                        </div>
-                        <div class="info-box">
-                            <strong>Choose size</strong>
-                            if( ! empty( $attributes["pa_size"] ) ) {
-                                $attribute = $attributes["pa_size"];
-                                $terms = $attribute->get_terms();
-
-                                <div class="product-colors clearfix">
-                                foreach ( $terms as $term ) {
-                                    <span class="color-btn color-btn-biege"> . $term->name . </span>
-                                }
-                                </div>;
-                            }
-                        </div>
+                      
+                      
                     </div>
 
                 </div>
