@@ -273,9 +273,7 @@
 								<div class="box clearfix">
 									<ul class="nav-settings-list">
 										<li><a href="javascript:void(0);">ENG</a></li>
-										<li><a href="javascript:void(0);">GER</a></li>
-										<li><a href="javascript:void(0);">لعربية</a></li>
-										<li><a href="javascript:void(0);">עִבְרִית</a></li>
+									
 									</ul>
 								</div>
 							</div>
@@ -317,6 +315,7 @@
 	<div class="cart-wrapper">
 		<div class="checkout">
 			<div class="clearfix">
+			<?php custom_added_to_cart_message(); ?>
 
 				<!--cart item-->
 
@@ -341,68 +340,9 @@
 						<span class="icon icon-cross icon-delete"></span>
 					</div>
 
-					<!--cart item-->
-
-					<div class="cart-block cart-block-item clearfix">
-						<div class="image">
-							<a href="product.html"><img src=<?php echo get_theme_file_uri( 'assets/images/product-2.png' );  ?> alt="" /></a>
-						</div>
-						<div class="title">
-							<div><a href="product.html">Product item</a></div>
-							<small>Product category</small>
-						</div>
-						<div class="quantity">
-							<input type="number" value="2" class="form-control form-quantity" />
-						</div>
-						<div class="price">
-							<span class="final">$ 1.998</span>
-							<span class="discount">$ 2.666</span>
-						</div>
-						<!--delete-this-item-->
-						<span class="icon icon-cross icon-delete"></span>
-					</div>
-
-					<!--cart item-->
-
-					<div class="cart-block cart-block-item clearfix">
-						<div class="image">
-							<a href="product.html"><img src=<?php echo get_theme_file_uri( 'assets/images/product-3.png' );  ?> alt="" /></a>
-						</div>
-						<div class="title">
-							<div><a href="product.html">Product item</a></div>
-							<small>Product category</small>
-						</div>
-						<div class="quantity">
-							<input type="number" value="2" class="form-control form-quantity" />
-						</div>
-						<div class="price">
-							<span class="final">$ 1.998</span>
-							<span class="discount">$ 2.666</span>
-						</div>
-						<!--delete-this-item-->
-						<span class="icon icon-cross icon-delete"></span>
-					</div>
-
-					<!--cart item-->
-
-					<div class="cart-block cart-block-item clearfix">
-						<div class="image">
-							<a href="product.html"><img src=<?php echo get_theme_file_uri( 'assets/images/product-4.png' );  ?> alt="" /></a>
-						</div>
-						<div class="title">
-							<div><a href="product.html">Product item</a></div>
-							<small>Product category</small>
-						</div>
-						<div class="quantity">
-							<input type="number" value="2" class="form-control form-quantity" />
-						</div>
-						<div class="price">
-							<span class="final">$ 1.998</span>
-							<span class="discount">$ 2.666</span>
-						</div>
-						<!--delete-this-item-->
-						<span class="icon icon-cross icon-delete"></span>
-					</div>
+					
+					
+					
 				</div>
 
 				<hr />
@@ -415,7 +355,7 @@
 							<strong>Discount 15%</strong>
 						</div>
 						<div>
-							<span>$ 159,00</span>
+							<span></span>
 						</div>
 					</div>
 
@@ -424,7 +364,7 @@
 							<strong>Shipping</strong>
 						</div>
 						<div>
-							<span>$ 30,00</span>
+							<span></span>
 						</div>
 					</div>
 
@@ -433,7 +373,7 @@
 							<strong>VAT</strong>
 						</div>
 						<div>
-							<span>$ 59,00</span>
+							<span></span>
 						</div>
 					</div>
 				</div>
@@ -448,7 +388,7 @@
 							<strong>Total</strong>
 						</div>
 						<div>
-							<div class="h4 title">$ 1259,00</div>
+							<div class="h4 title"></div>
 						</div>
 					</div>
 				</div>
@@ -457,7 +397,6 @@
 				<!--cart navigation -->
 
 				<div class="cart-block-buttons clearfix">
-				<?php custom_added_to_cart_message(); ?>
 
 					<div class="row">
 						<div class="col-xs-6">

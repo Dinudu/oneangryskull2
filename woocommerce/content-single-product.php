@@ -483,7 +483,6 @@ if ( post_password_required() ) {
                                                             <p>Your email address will not be published.</p>
                                                         </div>
 
-                                                        <?php comments_template(); ?>
 
 
                                                     </div><!--/comment-add-->
@@ -500,6 +499,7 @@ if ( post_password_required() ) {
                 </div> <!--/container-->
             </div> <!--/info-->
 </section>
+</div>
 </div>
 
 <?php woocommerce_output_related_products(); ?>
