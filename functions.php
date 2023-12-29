@@ -131,6 +131,12 @@ add_action( 'after_setup_theme', 'oneangryskull_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 
+ function custom_added_to_cart_message() {
+    $cart_items_count = WC()->cart->get_cart_contents_count();
+    if ( $cart_items_count > 0 ) {
+        echo '<p class="woocommerce-mini-cart__added-to-cart-message">' . esc_html__( 'Added to cart.', 'woocommerce' ) . '</p>';
+    }
+}
 
  
 function display_home_products(){

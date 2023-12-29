@@ -457,12 +457,13 @@
 				<!--cart navigation -->
 
 				<div class="cart-block-buttons clearfix">
+				<?php custom_added_to_cart_message(); ?>
+
 					<div class="row">
 						<div class="col-xs-6">
 							<a href="products-grid.html" class="btn btn-clean-dark">Continue shopping</a>
 						</div>
 						<div class="col-xs-6 text-right">
-							<a href="checkout-1.html" class="btn btn-main"><span class="icon icon-cart"></span> Checkout</a>
 						</div>
 					</div>
 				</div>
