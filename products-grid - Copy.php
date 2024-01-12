@@ -11,7 +11,7 @@ get_header();
  <section class="main-header">
             <header>
                 <div class="container">
-                    <h1 class="h2 title">Shop </h1>
+                    <h1 class="h2 title">Shop grid</h1>
                     <ol class="breadcrumb breadcrumb-inverted">
                         <li><a href="index.html"><span class="icon icon-home"></span></a></li>
                         <li><a href="category.html">Product Category</a></li>
@@ -107,21 +107,68 @@ get_header();
                             <div class="filter-content">
                                 <span class="checkbox">
                                     <input type="checkbox" id="typeId1">
-                                    <label for="typeId1">T Shirt <i>(12)</i></label>
+                                    <label for="typeId1">Shoes <i>(1200)</i></label>
                                 </span>
                                 <span class="checkbox">
                                     <input type="checkbox" id="typeId2">
-                                    <label for="typeId2">Mug <i>(5)</i></label>
+                                    <label for="typeId2">Gadgets <i>(12)</i></label>
                                 </span>
                                 <span class="checkbox">
                                     <input type="checkbox" id="typeId3">
-                                    <label for="typeId3">Jackets <i>(10)</i></label>
+                                    <label for="typeId3">TV & Video <i>(80)</i></label>
                                 </span>
                                 <span class="checkbox">
                                     <input type="checkbox" id="typeId4">
-                                    <label for="typeId4">Bag <i>(8)</i></label>
+                                    <label for="typeId4">Drones <i>(140)</i></label>
                                 </span>
-                               
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId5">
+                                    <label for="typeId5">Media storage <i>(20)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId6">
+                                    <label for="typeId6">Cameras <i>(10)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId7">
+                                    <label for="typeId7">Bookcase <i>(450)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId8">
+                                    <label for="typeId8">Mobile phones <i>(750)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId9">
+                                    <label for="typeId9">Accessories <i>(960)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId10">
+                                    <label for="typeId10">Home <i>(44)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId11">
+                                    <label for="typeId11">Projectors <i>(5)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId12">
+                                    <label for="typeId12">Movies & TV <i>(80)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId13">
+                                    <label for="typeId13">Fashion <i>(23)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId14">
+                                    <label for="typeId14">Toys <i>(24)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId15">
+                                    <label for="typeId15">Musical Instruments <i>(92)</i></label>
+                                </span>
+                                <span class="checkbox">
+                                    <input type="checkbox" id="typeId16">
+                                    <label for="typeId16">Lightning <i>(1120)</i></label>
+                                </span>
                             </div>
                         </div> <!--/filter-box-->
                         <!--Material-->
@@ -199,7 +246,6 @@ get_header();
                         <!-- === product-item === -->
 
 <ul class="products">
-
 	<?php
 		$args = array(
 			'post_type' => 'product',
@@ -216,8 +262,39 @@ get_header();
 		wp_reset_postdata();
 	?>
 </ul>
-<!-- === End product-item === -->
-                       
+
+                        <div class="col-xs-6 col-sm-4 col-lg-3">
+                            <article>
+                                <div class="info">
+                                    <span class="add-favorite">
+                                        <a href="javascript:void(0);" data-title="Add to favorites" data-title-added="Added to favorites list"><i class="icon icon-heart"></i></a>
+                                    </span>
+                                    <span>
+                                        <a href="#productid1" class="mfp-open" data-title="Quick wiew"><i class="icon icon-eye"></i></a>
+                                    </span>
+                                </div>
+                                <div class="btn btn-add">
+                                    <i class="icon icon-cart"></i>
+                                </div>
+                                <div class="figure-grid">
+                                    <div class="image">
+                                        <a href="#productid1" class="mfp-open">
+                                            <img src=<?php echo get_theme_file_uri( 'assets/images/product-7.png' );  ?> alt="" width="360" />
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <h2 class="title h4">
+                                            <a href="product.html">Coffee machine</a>
+                                        </h2>
+                                        <sub>$ 159,-</sub>
+                                        <sup>$ 139,-</sup>
+                                        <span class="description clearfix">Gubergren amet dolor ea diam takimata consetetur facilisis blandit et aliquyam lorem ea duo labore diam sit et consetetur nulla</span>
+                                    </div>
+                                </div>
+                                
+                            </article>
+                        </div>
+                    
 
                     </div><!--/row-->
                     <!--Pagination-->

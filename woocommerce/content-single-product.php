@@ -51,8 +51,9 @@ if ( post_password_required() ) {
 
                                 <!-- === product-title === -->
 
-                                <h1 class="title" data-title="<?php $product_categories = wc_get_product_category_list( $product->get_id() ); echo implode(', ', $product_categories); ?>">
-									<?php the_title(); ?>
+                                <h1 class="title" data-title="">
+									
+                                <?php the_title(); ?>
                                     <small>Free shipping</small>
                                 </h1>
 
@@ -138,8 +139,27 @@ if ( post_password_required() ) {
                                         }
                                     ?>
                                 </div>
-                                <button type="submit" class="btn btn-buy" data-text="Buy"></button>
 
+                                <!--start add to cart Function -->
+                               
+
+
+
+
+                                
+
+</form>
+
+<a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="btn btn-buy" data-text="Buy">
+   
+</a>
+
+                               
+
+
+
+
+                                <!--End Add to cart -->
                                 </div> <!--/clearfix-->
                             </div> <!--/product-info-wrapper-->
                         </div> <!--/col-md-4-->

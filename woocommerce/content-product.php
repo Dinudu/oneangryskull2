@@ -34,7 +34,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 
 
-</style>
+
 <div class="col-xs-6 col-sm-4 col-lg-3">
 <div class="row row-clean">
 
@@ -141,5 +141,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 		</div>
 	</div>
+
+
+	
 </div>
 </div>

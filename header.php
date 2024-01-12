@@ -215,7 +215,7 @@
 				</li>-->
 				
 				<li>
-					<a href="<?php bloginfo('url'); ?>/shop/">SHOP <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
+					<a href="<?php bloginfo('url'); ?>/product-grid/">SHOP <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
 					<div class="navbar-dropdown navbar-dropdown-single">
 						<div class="navbar-box">
 							<div class="box-full">
