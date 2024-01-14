@@ -310,7 +310,21 @@
 
 				<!--cart item-->
 
-				<div class="row">
+			
+						<div class="title">
+							<div><a href="#">Product item</a></div>
+							<small>Product category</small>
+						</div>
+						<div class="quantity">
+							<input type="number" value="0" class="form-control form-quantity" />
+						</div>
+						<div class="price">
+							<span class="final"><?php echo 'Current Cart Total: ' . WC()->cart->total;?></span>
+							<span class="discount">$ 2.666</span>
+						</div>
+					
+						<span class="icon icon-cross icon-delete"></span>
+					</div>
 				<?php
 
 					// Setup variables
@@ -328,7 +342,9 @@
 							$quantity = $values['quantity'];
                             
 							echo '<div class="cart-block cart-block-item clearfix">';
+							echo '<div class="row">';
 							echo '<div class="image">';
+							echo '</div>';
 
 							// Product title
 							echo '<div class="title">';
@@ -348,6 +364,7 @@
 							echo '</div>';
 							// Remove from cart link
 							echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="icon icon-cross icon-delete" </a>';
+							
 							echo '</div>';
 							echo '</div>';
 						
@@ -358,22 +375,7 @@
 					<div class="cart-block cart-block-item clearfix">
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
-					<div class="image">
-						</div>
-						<div class="title">
-							<div><a href="#">Product item</a></div>
-							<small>Product category</small>
-						</div>
-						<div class="quantity">
-							<input type="number" value="0" class="form-control form-quantity" />
-						</div>
-						<div class="price">
-							<span class="final"><?php echo 'Current Cart Total: ' . WC()->cart->total;?></span>
-							<span class="discount">$ 2.666</span>
-						</div>
-					
-						<span class="icon icon-cross icon-delete"></span>
-					</div>
+				
 
 					
 					
