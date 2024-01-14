@@ -34,17 +34,7 @@ get_header();
 
                 <div class="col-md-3 col-xs-12">
                     <div class="filters">
-                        <!--Price-->
-                        
-                        <!--Colors-->
-                        
-                        <!--Availability-->
-                        
-                        <!--Discount-->
-                        
-                        <!--Type-->
-                        
-                        <!--Material-->
+                     
                        
                         <!--close filters on mobile / update filters-->
                         <div class="toggle-filters-close btn btn-main">
