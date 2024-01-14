@@ -386,6 +386,42 @@ get_header();
                     </div>
                 </div>
 
+                <div class="col-md-6">
+                                <div class="white-block">
+
+                                    <div class="h4">Choose payment</div>
+
+                                    <hr />
+
+                                    <span class="checkbox">
+                                        <input type="radio" id="paymentID1" name="paymentOption" checked="checked">
+                                        <label for="paymentID1">
+                                            <strong>Pay via credit cart</strong> <br />
+                                            <small>(MasterCard, Maestro, Visa, Visa Electron, JCB and American Express)</small>
+                                        </label>
+                                    </span>
+
+                                    <span class="checkbox">
+                                        <input type="radio" id="paymentID2" name="paymentOption">
+                                        <label for="paymentID2">
+                                            <strong>PayPal</strong> <br />
+                                            <small>Purchase with your fingertips. Look for us the next time you're paying from a mobile app, and checkout faster on thousands of mobile websites.</small>
+                                        </label>
+                                    </span>
+
+                                    <span class="checkbox">
+                                        <input type="radio" id="paymentID3" name="paymentOption">
+                                        <label for="paymentID3">
+                                            <strong>Pay via bank transfer</strong> <br />
+                                            <small>You can make payments directly into our bank account and email the bank wire transfer receipt to us. We recommend bank wire transfer for payments exceeding $500,00. </small>
+                                        </label>
+                                    </span>
+
+                                    <hr />
+
+                                    <p>Please allow three working days for the payment confirmation to reflect in your <a href="#">online account</a>. Once your payment is confirmed, we will generate your e-invoice, which you can view/print from your account or email.</p>
+                                </div>
+                            </div>
                 <!-- ========================  Cart navigation ======================== -->
 
                 <div class="clearfix">
