@@ -347,7 +347,7 @@ get_header();
                                 <strong>Total</strong>
                             </div>
                             <div>
-                                <div class="h2 title"><?php echo  WC()->cart->total;?></div>
+                                <div class="h2 title">$<?php echo  WC()->cart->total;?></div>
                             </div>
                         </div>
                     </div>
