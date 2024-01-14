@@ -138,6 +138,14 @@ add_action( 'after_setup_theme', 'oneangryskull_content_width', 0 );
     }
 }
 
+function woocommerce_create_account_form() {
+    if ( ! is_user_logged_in() ) {
+        $woocommerce_create_account_form = '[woocommerce_create_account]';
+        return $woocommerce_create_account_form;
+    }
+}
+add_shortcode('create_account_form', 'woocommerce_create_account_form');
+
  
 function display_home_products(){
     $args = array(
