@@ -348,7 +348,7 @@
 							// Remove from cart link
 							echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="icon icon-cross icon-delete" </a>';
 							echo '</div>';
-							echo '</div>';
+						
 						
 						}
 					}
