@@ -33,9 +33,28 @@ get_header();
                 <!-- === product-filters === -->
 
                 <div class="col-md-3 col-xs-12">
-                   
+                    <div class="filters">
+                        <!--Price-->
+                        
+                        <!--Colors-->
+                        
+                        <!--Availability-->
+                        
+                        <!--Discount-->
+                        
+                        <!--Type-->
+                        
+                        <!--Material-->
+                       
+                        <!--close filters on mobile / update filters-->
+                        <div class="toggle-filters-close btn btn-main">
+                            Update search
+                        </div>
 
-          
+                    </div> <!--/filters-->
+                </div>
+
+                <!--product items-->
 
                 <div class="col-md-9 col-xs-12">
 
