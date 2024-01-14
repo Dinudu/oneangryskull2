@@ -51,10 +51,10 @@
                     <div class="col-sm-4 col-md-2">
                     <h5>Browse by</h5>
                         <ul>
-                            <li><a href="<?php bloginfo('url'); ?>/men/">Men</a></li>
-                            <li><a href="<?php bloginfo('url'); ?>/women/">Woman</a></li>
-                            <li><a href="<?php bloginfo('url'); ?>/accessories/">Accessories</a></li>
-                            <li><a href="<?php bloginfo('url'); ?>/sportwear/">Sportwear</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/product-category/men/">Men</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/product-category/women/">Woman</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/product-category/accessories/">Accessories</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/product-category/sportwear/">Sportwear</a></li>
                         
                             
                            
