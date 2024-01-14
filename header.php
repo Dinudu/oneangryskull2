@@ -418,7 +418,7 @@
 
 				<!--cart navigation -->
 
-				<div class="cart-block-buttons clearfix">
+				<div class="cart-block-buttons">
 
 					<div class="row">
 						<div class="col-xs-6">
