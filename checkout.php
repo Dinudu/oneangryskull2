@@ -393,29 +393,28 @@ get_header();
 
                                     <hr />
 
-                                    <span class="checkbox">
-                                        <input type="radio" id="paymentID1" name="paymentOption" checked="checked">
-                                        <label for="paymentID1">
-                                            <strong>Pay via credit cart</strong> <br />
-                                            <small>(MasterCard, Maestro, Visa, Visa Electron, JCB and American Express)</small>
-                                        </label>
-                                    </span>
+                                    <form>
+                                        <!-- Other form fields here -->
 
-                                    <span class="checkbox">
-                                        <input type="radio" id="paymentID2" name="paymentOption">
-                                        <label for="paymentID2">
-                                            <strong>PayPal</strong> <br />
-                                            <small>Purchase with your fingertips. Look for us the next time you're paying from a mobile app, and checkout faster on thousands of mobile websites.</small>
-                                        </label>
-                                    </span>
+                                        <fieldset>
+                                            <legend>Payment Method</legend>
+                                            <div class="payment_method_radio">
+                                                <span class="checkbox">
+                                                    <input type="radio" id="paymentID1" name="paymentOption" checked="checked">
+                                                    <label for="paymentID1">
+                                                        <strong>Pay via credit cart</strong> <br />
+                                                        <small>(MasterCard, Maestro, Visa, Visa Electron, JCB and American Express)</small>
+                                                    </label>
+                                                </span>
 
-                                    <span class="checkbox">
-                                        <input type="radio" id="paymentID3" name="paymentOption">
-                                        <label for="paymentID3">
-                                            <strong>Pay via bank transfer</strong> <br />
-                                            <small>You can make payments directly into our bank account and email the bank wire transfer receipt to us. We recommend bank wire transfer for payments exceeding $500,00. </small>
-                                        </label>
-                                    </span>
+                                                <!-- Additional payment methods here -->
+                                            </div>
+                                        </fieldset>
+
+                                        <!-- Other form fields here -->
+                                        </form>
+
+                                   
 
                                     <hr />
 
