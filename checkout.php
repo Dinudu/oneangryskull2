@@ -313,7 +313,7 @@ get_header();
                                 <strong>Discount 15%</strong>
                             </div>
                             <div>
-                                <span>$ 159,00</span>
+                                <span>$ 0,00</span>
                             </div>
                         </div>
 
@@ -322,7 +322,7 @@ get_header();
                                 <strong>Shipping</strong>
                             </div>
                             <div>
-                                <span>$ 30,00</span>
+                                <span>$ 0,00</span>
                             </div>
                         </div>
 
@@ -331,7 +331,7 @@ get_header();
                                 <strong>VAT</strong>
                             </div>
                             <div>
-                                <span>$ 59,00</span>
+                                <span>$ 0,00</span>
                             </div>
                         </div>
                     </div>
@@ -344,7 +344,7 @@ get_header();
                                 <strong>Promo code included!</strong>
                             </div>
                             <div>
-                                <div class="h2 title">$ 1259,00</div>
+                                <div class="h2 title"><?php echo 'Current Cart Total: ' . WC()->cart->total;?></div>
                             </div>
                         </div>
                     </div>
