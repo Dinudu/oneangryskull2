@@ -286,12 +286,12 @@
 
 	<div class="login-wrapper">
 		<div class="h4">Sign in</div>
-		<form>
+		<form id="custom-login-form" method="post">
 			<div class="form-group">
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				<input type="email" class="form-control" name="username" id="username" value="<?php echo ! empty( $_POST['username'] ) ? esc_attr( $_POST['username'] ) : ''; ?>">
 			</div>
 			<div class="form-group">
-				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				<input type="password" class="form-control" name="password" id="password">
 			</div>
 			<div class="form-group">
 				<a href="#forgotpassword" class="open-popup">Forgot password?</a>

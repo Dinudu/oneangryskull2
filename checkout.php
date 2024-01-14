@@ -37,7 +37,7 @@ get_header();
                         <li class="col-md-3 active">
                             <span data-text="Delivery"></span>
                         </li>
-                        <li class="col-md-3">
+                        <li class="col-md-3 ">
                             <span data-text="Payment"></span>
                         </li>
                         <li class="col-md-3">
