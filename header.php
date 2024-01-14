@@ -315,20 +315,20 @@
 					<div class="cart-block cart-block-item clearfix">
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
-						<!-- <div class="image">
+					<div class="image">
 						</div>
 						<div class="title">
-							<div><a href="product.html">Product item</a></div>
+							<div><a href="#">Product item</a></div>
 							<small>Product category</small>
 						</div>
 						<div class="quantity">
-							<input type="number" value="2" class="form-control form-quantity" />
+							<input type="number" value="0" class="form-control form-quantity" />
 						</div>
 						<div class="price">
-							<span class="final">$ 1.998</span>
+							<span class="final"><?php echo 'Current Cart Total: ' . WC()->cart->total;?></span>
 							<span class="discount">$ 2.666</span>
-						</div> -->
-						<!--delete-this-item-->
+						</div>
+					
 						<span class="icon icon-cross icon-delete"></span>
 					</div>
 
@@ -344,7 +344,7 @@
 				<div class="clearfix">
 					<div class="cart-block cart-block-footer clearfix">
 						<div>
-							<strong>Discount 15%</strong>
+							<strong>Discount 0%</strong>
 						</div>
 						<div>
 							<span></span>
@@ -393,7 +393,7 @@
 
 					<div class="row">
 						<div class="col-xs-6">
-							<a href="cart.php" class="btn btn-clean-dark">Continue shopping</a>
+							<a href="<?php echo wc_get_page_permalink( 'cart' ); ?>" class="btn btn-clean-dark">To cart</a>
 						</div>
 						<div class="col-xs-6 text-right">
 						</div>
