@@ -398,13 +398,18 @@ get_header();
 
                                         <fieldset>
                                             <legend>Payment Method</legend>
-                                            <?php if ( $order->get_payment_method_title() ) : ?>
-                                            <li class="woocommerce-order-overview__payment_method method">
-                                                <?php esc_html_e( 'Payment method:', 'woocommerce' ); ?>
-                                                <strong><?php echo esc_html( $order->get_payment_method_title() ); ?></strong>
-                                            </li>
-                                        <?php endif; ?>
-                                           
+                                    
+                                            <div class="payment_method_radio">
+                                                <span class="checkbox">
+                                                    <input type="radio" id="paymentID1" name="paymentOption" checked="checked">
+                                                    <label for="paymentID1">
+                                                        <strong>Pay via credit cart</strong> <br />
+                                                        <small>(MasterCard, Maestro, Visa, Visa Electron, JCB and American Express)</small>
+                                                    </label>
+                                                </span>
+
+                                                <!-- Additional payment methods here -->
+                                            </div>
                                         </fieldset>
 
                                         <!-- Other form fields here -->
