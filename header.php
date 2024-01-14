@@ -311,27 +311,44 @@
 				<!--cart item-->
 
 				<div class="row">
+				<?php
 
+					// Setup variables
+					$total_qty = WC()->cart->get_cart_contents_count();
+					$cart_total = WC()->cart->get_cart_total();
+					$items = WC()->cart->get_cart();
+
+					// If no items in cart
+					if ( 0 === $total_qty ) {
+						echo '<li class="empty">No products in the cart.</li>';
+					} else {
+						// Output each item
+						foreach ( $items as $item => $values ) {
+							$_product = $values['data'];
+							$quantity = $values['quantity'];
+
+							echo '<li>';
+
+							// Product title
+							echo '<a href="' . esc_url( $_product->get_permalink( $cart_item ) ) . '">' . $_product->get_name() . '</a>';
+
+							// Quantity
+							echo '<span class="quantity">' . $quantity . '</span>';
+
+							// Price
+							echo '<span class="price">' . WC()->cart->get_product_price( $_product ) . '</span>';
+
+							// Remove from cart link
+							echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="remove" title="Remove this item">&times;</a>';
+
+							echo '</li>';
+						}
+					}
+					?>
 					<div class="cart-block cart-block-item clearfix">
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
-					<div class="image">
-						</div>
-						<div class="title">
-							<div><a href="#">Product item</a></div>
-							<small>Product category</small>
-						</div>
-						<div class="quantity">
-							<input type="number" value="0" class="form-control form-quantity" />
-						</div>
-						<div class="price">
-							<span class="final"><?php echo 'Current Cart Total: ' . WC()->cart->total;?></span>
-							<span class="discount">$ 2.666</span>
-						</div>
 					
-						<span class="icon icon-cross icon-delete"></span>
-					</div>
-
 					
 					
 					
