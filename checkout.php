@@ -276,7 +276,9 @@ get_header();
                     <div class="clearfix">
                     <?php
                         // Assuming you have the products stored in a variable named $products
-
+                        $total_qty = WC()->cart->get_cart_contents_count();
+                        $cart_total = WC()->cart->get_cart_total();
+                        $items = WC()->cart->get_cart();
                         // Display the cart products
                         foreach ($products as $product) {
                             // Replace 'id', 'name', 'quantity', 'price', 'image', and 'category' with your actual variable names
