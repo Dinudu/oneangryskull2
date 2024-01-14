@@ -308,23 +308,7 @@
 			<div class="clearfix">
 			<?php custom_added_to_cart_message(); ?>
 
-				<!--cart item-->
-
-			
-						<div class="title">
-							<div><a href="#">Product item</a></div>
-							<small>Product category</small>
-						</div>
-						<div class="quantity">
-							<input type="number" value="0" class="form-control form-quantity" />
-						</div>
-						<div class="price">
-							<span class="final"><?php echo 'Current Cart Total: ' . WC()->cart->total;?></span>
-							<span class="discount">$ 2.666</span>
-						</div>
-					
-						<span class="icon icon-cross icon-delete"></span>
-					</div>
+				
 				<?php
 
 					// Setup variables
