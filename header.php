@@ -326,7 +326,8 @@
 						foreach ( $items as $item => $values ) {
 							$_product = $values['data'];
 							$quantity = $values['quantity'];
-
+                            
+							echo '<div class="cart-block cart-block-item clearfix">';
 							echo '<div class="image">';
 
 							// Product title
@@ -347,6 +348,7 @@
 							echo '</div>';
 							// Remove from cart link
 							echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="icon icon-cross icon-delete" </a>';
+							echo '</div>';
 							echo '</div>';
 						
 						
