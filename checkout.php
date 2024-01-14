@@ -388,13 +388,7 @@ get_header();
                                                 } else {
                                                     // If there are no available payment gateways, display a default message
                                                     ?>
-                                                    <span class="checkbox">
-                                                        <input type="radio" id="paymentID1" name="paymentOption" checked="checked">
-                                                        <label for="paymentID1">
-                                                            <strong>Pay via credit cart</strong> <br />
-                                                            <small>(MasterCard, Maestro, Visa, Visa Electron, JCB and American Express)</small>
-                                                        </label>
-                                                    </span>
+                                                
                                                     <?php
                                                 }
                                                 ?>
