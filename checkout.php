@@ -343,10 +343,10 @@ get_header();
                     <div class="clearfix">
                         <div class="cart-block cart-block-footer clearfix">
                             <div>
-                                <strong>Promo code included!</strong>
+                                <strong>Total</strong>
                             </div>
                             <div>
-                                <div class="h2 title"><?php echo 'Current Cart Total: ' . WC()->cart->total;?></div>
+                                <div class="h2 title"><?php echo  WC()->cart->total;?></div>
                             </div>
                         </div>
                     </div>
@@ -364,17 +364,40 @@ get_header();
 
                                         <fieldset>
                                             <legend>Payment Method</legend>
-                                    
-                                            <div class="payment_method_radio">
-                                                <span class="checkbox">
-                                                    <input type="radio" id="paymentID1" name="paymentOption" checked="checked">
-                                                    <label for="paymentID1">
-                                                        <strong>Pay via credit cart</strong> <br />
-                                                        <small>(MasterCard, Maestro, Visa, Visa Electron, JCB and American Express)</small>
-                                                    </label>
-                                                </span>
 
-                                                <!-- Additional payment methods here -->
+                                            <div class="payment_method_radio">
+                                                <?php
+                                                // Check if there are available payment gateways
+                                                if (count($available_gateways) > 0) {
+                                                    // Loop through the available payment gateways
+                                                    foreach ($available_gateways as $gateway) {
+                                                        // Skip gateways that don't have an 'id' and 'title' attribute
+                                                        if (!isset($gateway->id) || !isset($gateway->title)) {
+                                                            continue;
+                                                        }
+                                                        ?>
+                                                        <span class="checkbox">
+                                                            <input type="radio" id="paymentID<?php echo esc_attr($gateway->id); ?>" name="paymentOption" checked="checked">
+                                                            <label for="paymentID<?php echo esc_attr($gateway->id); ?>">
+                                                                <strong><?php echo esc_html($gateway->title); ?></strong> <br />
+                                                                <small><?php echo esc_html($gateway->description); ?></small>
+                                                            </label>
+                                                        </span>
+                                                        <?php
+                                                    }
+                                                } else {
+                                                    // If there are no available payment gateways, display a default message
+                                                    ?>
+                                                    <span class="checkbox">
+                                                        <input type="radio" id="paymentID1" name="paymentOption" checked="checked">
+                                                        <label for="paymentID1">
+                                                            <strong>Pay via credit cart</strong> <br />
+                                                            <small>(MasterCard, Maestro, Visa, Visa Electron, JCB and American Express)</small>
+                                                        </label>
+                                                    </span>
+                                                    <?php
+                                                }
+                                                ?>
                                             </div>
                                         </fieldset>
 
