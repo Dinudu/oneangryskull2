@@ -366,34 +366,20 @@ get_header();
                                         <fieldset>
                                             <legend>Payment Method</legend>
 
-                                            <div class="payment_method_radio">
+                                            <?php if ( WC()->cart->needs_payment() ) : ?>
+                                            <ul class="wc_payment_methods payment_methods methods">
                                                 <?php
-                                                // Check if there are available payment gateways
-                                                if (count($available_gateways) > 0) {
-                                                    // Loop through the available payment gateways
-                                                    foreach ($available_gateways as $gateway) {
-                                                        // Skip gateways that don't have an 'id' and 'title' attribute
-                                                        if (!isset($gateway->id) || !isset($gateway->title)) {
-                                                            continue;
-                                                        }
-                                                        ?>
-                                                        <span class="checkbox">
-                                                            <input type="radio" id="paymentID<?php echo esc_attr($gateway->id); ?>" name="paymentOption" checked="checked">
-                                                            <label for="paymentID<?php echo esc_attr($gateway->id); ?>">
-                                                                <strong><?php echo esc_html($gateway->title); ?></strong> <br />
-                                                                <small><?php echo esc_html($gateway->description); ?></small>
-                                                            </label>
-                                                        </span>
-                                                        <?php
+                                                if ( ! empty( $available_gateways ) ) {
+                                                    foreach ( $available_gateways as $gateway ) {
+                                                        wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $gateway ) );
                                                     }
                                                 } else {
-                                                    // If there are no available payment gateways, display a default message
-                                                    ?>
-                                                
-                                                    <?php
+                                                    echo '<li>';
+                                                    wc_print_notice( apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__( 'Sorry, it seems that there are no available payment methods. Please contact us if you require assistance or wish to make alternate arrangements.', 'woocommerce' ) : esc_html__( 'Please fill in your details above to see available payment methods.', 'woocommerce' ) ), 'notice' ); // phpcs:ignore WooCommerce.Commenting.CommentHooks.MissingHookComment
+                                                    echo '</li>';
                                                 }
                                                 ?>
-                                            </div>
+                                                </ul>
                                         </fieldset>
 
                                         <!-- Other form fields here -->
@@ -414,10 +400,11 @@ get_header();
                             <a href="checkout-1.html" class="btn btn-clean-dark"><span class="icon icon-chevron-left"></span> Back to cart</a>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <a href="checkout-3.html" class="btn btn-main"><span class="icon icon-cart"></span> Go to payment</a>
-                        </div>
-                        <?php echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); ?>
-
+                        <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-main<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>">
+	                    <span class="icon icon-cart"></span><?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?>  
+                        </a>                        
+                    </div>
+                        
                     </div>
                 </div>
 
