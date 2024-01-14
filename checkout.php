@@ -95,7 +95,8 @@ get_header();
 
                                             <hr />
 
-                                            [woocommerce_login_form]
+                                            <?php echo do_shortcode('[woocommerce_login_form]'); ?>
+
                                         </div> <!--/signin-->
                                         <!--signup-->
 
@@ -105,7 +106,8 @@ get_header();
 
                                             <hr />
 
-                                            [woocommerce_register_form]
+                                            <?php echo do_shortcode('[woocommerce_register_form]'); ?>
+
                                         </div> <!--/signup-->
                                     </div>
                                 </div> <!--/login-wrapper-->
