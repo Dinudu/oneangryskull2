@@ -289,56 +289,8 @@ get_header();
                             </div>
                         </div>
 
-                        <div class="cart-block cart-block-item clearfix">
-                            <div class="image">
-                                <a href="product.html"><img src="assets/images/product-8.png" alt="" /></a>
-                            </div>
-                            <div class="title">
-                                <div class="h4"><a href="product.html">Iron set</a></div>
-                                <div>Home accessories</div>
-                            </div>
-                            <div class="quantity">
-                                <strong>2</strong>
-                            </div>
-                            <div class="price">
-                                <span class="final h3">$ 390,00</span>
-                                <span class="discount">$ 490,00</span>
-                            </div>
-                        </div>
-
-                        <div class="cart-block cart-block-item clearfix">
-                            <div class="image">
-                                <a href="product.html"><img src="assets/images/product-10.png" alt="" /></a>
-                            </div>
-                            <div class="title">
-                                <div class="h4"><a href="product.html">Wireless Headphones</a></div>
-                                <div>Green corner</div>
-                            </div>
-                            <div class="quantity">
-                                <strong>1</strong>
-                            </div>
-                            <div class="price">
-                                <span class="final h3">$ 180,00</span>
-                                <span class="discount">$ 200,00</span>
-                            </div>
-                        </div>
-
-                        <div class="cart-block cart-block-item clearfix">
-                            <div class="image">
-                                <a href="product.html"><img src="assets/images/product-12.png" alt="" /></a>
-                            </div>
-                            <div class="title">
-                                <div class="h4"><a href="product.html">E-shaver 500</a></div>
-                                <div>Electronics</div>
-                            </div>
-                            <div class="quantity">
-                                <strong>1</strong>
-                            </div>
-                            <div class="price">
-                                <span class="final h3">$ 199,00</span>
-                                <span class="discount">$ 149,00</span>
-                            </div>
-                        </div>
+                     
+                       
                     </div>
 
                     <!--cart prices -->
