@@ -274,22 +274,32 @@ get_header();
                     <!--cart items-->
 
                     <div class="clearfix">
-                        <div class="cart-block cart-block-item clearfix">
-                            <div class="image">
-                                <a href="product.html"><img src="assets/images/product-7.png" alt="" /></a>
+                    <?php
+                        // Assuming you have the products stored in a variable named $products
+
+                        // Display the cart products
+                        foreach ($products as $product) {
+                            // Replace 'id', 'name', 'quantity', 'price', 'image', and 'category' with your actual variable names
+                            echo '
+                            <div class="cart-block cart-block-item clearfix">
+                                <div class="image">
+                                    <a href="product.html"><img src="' . $product['image'] . '" alt="" /></a>
+                                </div>
+                                <div class="title">
+                                    <div class="h4"><a href="product.html">' . $product['name'] . '</a></div>
+                                    <div>' . $product['category'] . '</div>
+                                </div>
+                                <div class="quantity">
+                                    <strong>' . $product['quantity'] . '</strong>
+                                </div>
+                                <div class="price">
+                                    <span class="final h3">$ ' . $product['price'] . '</span>
+                                    <span class="discount">$ ' . $product['discount'] . '</span>
+                                </div>
                             </div>
-                            <div class="title">
-                                <div class="h4"><a href="product.html">Coffee machine</a></div>
-                                <div>Electronics</div>
-                            </div>
-                            <div class="quantity">
-                                <strong>2</strong>
-                            </div>
-                            <div class="price">
-                                <span class="final h3">$ 150,00</span>
-                                <span class="discount">$ 190,00</span>
-                            </div>
-                        </div>
+                            ';
+                        }
+                        ?>
 
                      
                        
