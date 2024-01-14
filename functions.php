@@ -394,7 +394,13 @@ function woocommerce_template_loop_add_to_cart(){
 */
 // Change add to cart text on single product page
 
-
+function oneangryskull_enqueue_scripts() {
+    if ( is_page( 'login-form' ) ) {
+        wp_enqueue_style( 'woocommerce-general', WC()->plugin_url() . '/assets/css/woocommerce.css' );
+        wp_enqueue_script( 'wc-password-strength-meter', WC()->plugin_url() . '/assets/js/password-strength-meter.min.js', array( 'jquery' ), WC_VERSION, true );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'oneangryskull_enqueue_scripts' );
 
 
 
