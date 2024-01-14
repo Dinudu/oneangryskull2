@@ -338,7 +338,7 @@
 							echo '</div>';
 							// Quantity
 							echo '<div class="quantity">';
-							echo '<input type="number" class="form-control form-quantity value='. $quantity .'">';
+							echo '<input type="number" class="form-control form-quantity" value='. $quantity .'>';
 							echo '</div>';
 							// Price
 							echo '<div class="price">';
