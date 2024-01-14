@@ -401,6 +401,25 @@ function woocommerce_template_loop_add_to_cart(){
 }
 */
 // Change add to cart text on single product page
+function get_woocommerce_currency_symbol($currency='') {
+    if(empty($currency)) {
+        $currency = get_woocommerce_currency();
+    }
+
+    switch($currency) {
+        case 'USD': $currency_symbol = '&#36;'; break;
+        case 'GBP': $currency_symbol = '&#163;'; break;
+        case 'EUR': $currency_symbol = '&#8364;'; break;
+        default: $currency_symbol = ''; break;
+    }
+
+    return $currency_symbol;
+}
+
+$currency_symbol = get_woocommerce_currency_symbol();
+
+echo $currency_symbol . WC()->cart->total;
+
 
 function oneangryskull_enqueue_scripts() {
     if ( is_page( 'login-form' ) ) {

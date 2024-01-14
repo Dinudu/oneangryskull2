@@ -279,6 +279,7 @@ get_header();
                         $total_qty = WC()->cart->get_cart_contents_count();
                         $cart_total = WC()->cart->get_cart_total();
                         $items = WC()->cart->get_cart();
+                        $currency_symbol = get_woocommerce_currency_symbol();
                         // Display the cart products
                         foreach ($products as $product) {
                             // Replace 'id', 'name', 'quantity', 'price', 'image', and 'category' with your actual variable names
@@ -346,7 +347,7 @@ get_header();
                                 <strong>Total</strong>
                             </div>
                             <div>
-                                <div class="h2 title"><?php echo  WC()->cart->total;?></div>
+                                <div class="h2 title"><?php  echo $currency_symbol; ?><?php echo  WC()->cart->total;?></div>
                             </div>
                         </div>
                     </div>
