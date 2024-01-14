@@ -334,9 +334,11 @@
 							echo '<div>';
 							echo '<a href="' . esc_url( $_product->get_permalink( $cart_item ) ) . '">' . $_product->get_name() . '</a>';
 							echo '</div>';
+							echo '<small>Product category</small>';
+							echo '</div>';
 							// Quantity
 							echo '<div class="quantity">';
-							echo '<input type="number" class="form-control form-quantity">' . $quantity . '</span>';
+							echo '<input type="number" class="form-control form-quantity value='. $quantity .'">';
 							echo '</div>';
 							// Price
 							echo '<div class="price">';
@@ -344,7 +346,7 @@
 							echo '<span class="discount">' . WC()->cart->get_product_price( $_product ) . '</span>';
 							echo '</div>';
 							// Remove from cart link
-							echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="remove" title="Remove this item">&times;</a>';
+							echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="icon icon-cross icon-delete" </a>';
 							echo '</div>';
 						
 						}
