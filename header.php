@@ -327,28 +327,49 @@
 							$_product = $values['data'];
 							$quantity = $values['quantity'];
 
-							echo '<li>';
+							echo '<div class="image">';
 
 							// Product title
+							echo '<div class="title">';
+							echo '<div>';
 							echo '<a href="' . esc_url( $_product->get_permalink( $cart_item ) ) . '">' . $_product->get_name() . '</a>';
-
+							echo '</div>';
 							// Quantity
-							echo '<span class="quantity">' . $quantity . '</span>';
-
+							echo 'div class="quantity">';
+							echo '<input type="number" class="form-control form-quantity">' . $quantity . '</span>';
+							echo '</div>';
 							// Price
-							echo '<span class="price">' . WC()->cart->get_product_price( $_product ) . '</span>';
-
+							echo 'div class="price">';
+							echo '<span class="final">' . WC()->cart->get_product_price( $_product ) . '</span>';
+							echo '<span class="discount">' . WC()->cart->get_product_price( $_product ) . '</span>';
+							echo '</div>';
 							// Remove from cart link
 							echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="remove" title="Remove this item">&times;</a>';
-
-							echo '</li>';
+							echo '</div>';
+						
 						}
 					}
 					?>
 					<div class="cart-block cart-block-item clearfix">
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
+					<div class="image">
+						</div>
+						<div class="title">
+							<div><a href="#">Product item</a></div>
+							<small>Product category</small>
+						</div>
+						<div class="quantity">
+							<input type="number" value="0" class="form-control form-quantity" />
+						</div>
+						<div class="price">
+							<span class="final"><?php echo 'Current Cart Total: ' . WC()->cart->total;?></span>
+							<span class="discount">$ 2.666</span>
+						</div>
 					
+						<span class="icon icon-cross icon-delete"></span>
+					</div>
+
 					
 					
 					
