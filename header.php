@@ -335,11 +335,11 @@
 							echo '<a href="' . esc_url( $_product->get_permalink( $cart_item ) ) . '">' . $_product->get_name() . '</a>';
 							echo '</div>';
 							// Quantity
-							echo 'div class="quantity">';
+							echo '<div class="quantity">';
 							echo '<input type="number" class="form-control form-quantity">' . $quantity . '</span>';
 							echo '</div>';
 							// Price
-							echo 'div class="price">';
+							echo '<div class="price">';
 							echo '<span class="final">' . WC()->cart->get_product_price( $_product ) . '</span>';
 							echo '<span class="discount">' . WC()->cart->get_product_price( $_product ) . '</span>';
 							echo '</div>';
