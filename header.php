@@ -324,11 +324,12 @@
 						foreach ( $items as $item => $values ) {
 							$_product = $values['data'];
 							$quantity = $values['quantity'];
-                            
+                            echo '<div class="row">';
 							echo '<div class="cart-block cart-block-item clearfix">';
-							echo '<div class="row">';
-							echo '<div class="image">';
-							echo '</div>';
+							
+							echo '<div class="image" > ';
+							echo'<a >'.$_product->get_image().'';
+							echo '</a> </div>';
 
 							// Product title
 							echo '<div class="title">';
@@ -347,7 +348,25 @@
 							echo '<span class="discount">' . WC()->cart->get_product_price( $_product ) . '</span>';
 							echo '</div>';
 							// Remove from cart link
-							echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="icon icon-cross icon-delete" </a>';
+							//echo '<a href="' . esc_url( wc_get_cart_remove_url( $cart_item_key ) ) . '" class="icon icon-cross icon-delete" </a>';
+
+
+							
+							echo apply_filters( 
+								'woocommerce_cart_item_remove_link',
+								sprintf(
+									'<a href="%s"  aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">&times;</a>',
+									esc_url( wc_get_cart_remove_url( $item ) ),
+									
+									esc_attr( sprintf( __( 'Remove %s from cart', 'woocommerce' ), wp_strip_all_tags( $product_name ) ) ),
+									esc_attr( $product_id ),
+									esc_attr( $item),
+									esc_attr( $_product->get_sku() )
+								),
+								$cart_item_key
+							);
+						
+
 							
 							echo '</div>';
 							echo '</div>';
@@ -355,14 +374,14 @@
 						
 						}
 					}
+					do_action( 'woocommerce_mini_cart_contents' );
 					?>
 					<div class="cart-block cart-block-item clearfix">
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
 				
 
-					
-					
+		
 					
 				</div>
 
