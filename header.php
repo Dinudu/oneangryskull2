@@ -376,6 +376,7 @@
 					}
 					do_action( 'woocommerce_mini_cart_contents' );
 					?>
+					
 					<div class="cart-block cart-block-item clearfix">
 					<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 

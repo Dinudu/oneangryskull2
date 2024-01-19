@@ -64,10 +64,10 @@ get_header();
                 <div class="clearfix">
                     <div class="row">
                         <div class="col-xs-6">
-                            <a href="checkout-1.html" class="btn btn-clean-dark"><span class="icon icon-chevron-left"></span> Back to cart</a>
+                            <a href="<?php bloginfo('url'); ?>/checkout/" class="btn btn-clean-dark"><span class="icon icon-chevron-left"></span> Back to cart</a>
                         </div>
                         <div class="col-xs-6 text-right">
-                            <a href="checkout-3.html" class="btn btn-main"><span class="icon icon-cart"></span> Go to payment</a>
+                            <a href="<?php bloginfo('url'); ?>/payment/" class="btn btn-main"><span class="icon icon-cart"></span> Go to payment</a>
                         </div>
                     </div>
                 </div>
@@ -274,38 +274,74 @@ get_header();
                     <!--cart items-->
 
                     <div class="clearfix">
-                    <?php
-                        // Assuming you have the products stored in a variable named $products
-                        $total_qty = WC()->cart->get_cart_contents_count();
-                        $cart_total = WC()->cart->get_cart_total();
-                        $items = WC()->cart->get_cart();
-                        $currency_symbol = get_woocommerce_currency_symbol();
-                        // Display the cart products
-                        foreach ($products as $product) {
-                            // Replace 'id', 'name', 'quantity', 'price', 'image', and 'category' with your actual variable names
-                            echo '
-                            <div class="cart-block cart-block-item clearfix">
-                                <div class="image">
-                                    <a href="product.html"><img src="' . $product['image'] . '" alt="" /></a>
-                                </div>
-                                <div class="title">
-                                    <div class="h4"><a href="product.html">' . $product['name'] . '</a></div>
-                                    <div>' . $product['category'] . '</div>
-                                </div>
-                                <div class="quantity">
-                                    <strong>' . $product['quantity'] . '</strong>
-                                </div>
-                                <div class="price">
-                                    <span class="final h3">$ ' . $product['price'] . '</span>
-                                    <span class="discount">$ ' . $product['discount'] . '</span>
-                                </div>
-                            </div>
-                            ';
-                        }
-                        ?>
+                	<?php
 
-                     
-                       
+					// Setup variables
+					$total_qty = WC()->cart->get_cart_contents_count();
+					$cart_total = WC()->cart->get_cart_total();
+					$items = WC()->cart->get_cart();
+
+					// If no items in cart
+					if ( 0 === $total_qty ) {
+						echo '<li class="empty">No products in the cart.</li>';
+					} else {
+						// Output each item
+						foreach ( $items as $item => $values ) {
+							$_product = $values['data'];
+							$quantity = $values['quantity'];
+                            
+							echo '<div class="cart-block cart-block-item clearfix">';
+							
+							echo '<div class="image" > ';
+							echo'<a >'.$_product->get_image().'';
+							echo '</a> </div>';
+
+							// Product title
+							echo '<div class="title">';
+							echo '<div>';
+							echo '<a href="' . esc_url( $_product->get_permalink( $cart_item ) ) . '">' . $_product->get_name() . '</a>';
+							echo '</div>';
+							/*echo '<small>Product category</small>';*/
+							echo '</div>';
+							// Quantity
+							echo '<div class="quantity">';
+							echo '<strong> ';
+                            echo''. $quantity .'';
+                            echo '</strong>';
+							echo '</div>';
+							// Price
+							echo '<div class="price">';
+							echo '<span class="final">' . WC()->cart->get_product_price( $_product ) . '</span>';
+							
+							echo '</div>';
+							
+							/*echo apply_filters( 
+								'woocommerce_cart_item_remove_link',
+								sprintf(
+									'<a href="%s"  aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">&times;</a>',
+									esc_url( wc_get_cart_remove_url( $item ) ),
+									
+									esc_attr( sprintf( __( 'Remove %s from cart', 'woocommerce' ), wp_strip_all_tags( $product_name ) ) ),
+									esc_attr( $product_id ),
+									esc_attr( $item),
+									esc_attr( $_product->get_sku() )
+								),
+								$cart_item_key
+							);*/
+						
+
+							
+							echo '</div>';
+							
+						
+						
+						}
+					}
+					do_action( 'woocommerce_mini_cart_contents' );
+					?>
+				<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
+
+                   
                     </div>
 
                     <!--cart prices -->
